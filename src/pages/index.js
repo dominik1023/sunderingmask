@@ -1,5 +1,7 @@
 import Image from "next/image";
+import LayoutHome from "./components/LayoutHome";
 import localFont from "next/font/local";
+import InfoCard from "./components/InfoCard";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -14,102 +16,57 @@ const geistMono = localFont({
 
 export default function Home() {
   return (
-    <div
-      className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
-    >
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/pages/index.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <LayoutHome>
+      <div
+        className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_20px] 
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      min-h-screen font-[family-name:var(--font-geist-sans)]`}
+      >
+        <main className="flex flex-col items-center sm:items-start">
+          {/* <div className="container mx-auto px-4 hero-content text-center"> */}
+          <div className="container max-w-screen-xl mx-auto px-4 hero-content text-center">
+            <h1 className="text-4xl font-bold text-center text-gray-900 mt-8">
+              Your Trusted Partner in Accessibility Compliance
+            </h1>
+
+            <p>
+              <strong>You don't have to stress over ADA compliance.</strong>
+              With our personalized solutions, you’ll quickly meet WCAG 2.1
+              standards while ensuring your website is user-friendly for
+              everyone. Let us handle the details so you can focus on your
+              business, with full peace of mind.
+            </p>
+            <br />
+            <br />
+            <div className="flex flex-wrap justify-center gap-6 items-stretch">
+              <InfoCard
+                imgSrc="/images/usability.png"
+                headline="Enhance Your Website’s Usability"
+                paragraph="Give all users, including those with disabilities, a seamless browsing experience. By improving accessibility, you’ll make your site easier to navigate, creating a better experience that keeps visitors engaged and loyal. The result? More satisfied users and higher conversion rates."
+                cta={{ href: "/services", text: "Learn More" }}
+              />
+              <InfoCard
+                imgSrc="/images/law.png"
+                headline="Stay Safe from Lawsuits"
+                paragraph="Protect your business by avoiding costly lawsuits with our ADA compliance services. We ensure your website meets WCAG 2.1 guidelines, helping you avoid legal risks and costly fines. You can focus on growing your business, knowing that your compliance is covered."
+                cta={{ href: "/legal-compliance", text: "Ensure Compliance" }}
+              />
+              <InfoCard
+                imgSrc="/images/edge.png"
+                headline="Gain a Competitive Edge"
+                paragraph="Set yourself apart from competitors by making your site accessible to everyone. A compliant website not only increases your reach but also positions you as an inclusive brand. Let accessibility be your secret to winning more customers and standing out in your industry."
+                cta={{ href: "/competition", text: "Get Started" }}
+              />
+            </div>
+            <p>
+              user experience, legal risk avoidance, stand out from your
+              competition
+            </p>
+            <p>remediation, monitoring, training</p>
+            <p>solutions - web components</p>
+          </div>
+        </main>
+      </div>
+    </LayoutHome>
   );
 }
