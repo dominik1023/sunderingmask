@@ -7,14 +7,12 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Join Our Community | Example.com"
-        description="Become part of an amazing group of people at Example.com. Join now and enjoy exclusive content and offers."
+        title="Why is Accessibility Important? | Accessibility Developers of Houston"
+        description="Become part of an amazing group of people at Accessibility Developers of Houston. Join now and enjoy exclusive content and offers."
         keywords="community, join, example, exclusive content"
       />
       <LayoutInterior pageTitle={"Why Accessibility is Important?"}>
-        <h2 style={{ fontSize: "2.2rem", margin: "3rem 0 2rem" }}>
-          What if YOU were blind?
-        </h2>
+        <h2 className="text-3xl font-bold">What if YOU were blind?</h2>
         <p>
           As a blind individual, navigating the internet often feels like a game
           of trust. Imagine walking into a room, knowing people are there, but

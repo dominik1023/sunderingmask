@@ -18,8 +18,8 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Join Our Community | Example.com"
-        description="Become part of an amazing group of people at Example.com. Join now and enjoy exclusive content and offers."
+        title="Join Our Community | Accessibility Developers of Houston"
+        description="Become part of an amazing group of people at Accessibility Developers of Houston. Join now and enjoy exclusive content and offers."
         keywords="community, join, example, exclusive content"
       />
       <LayoutInterior
@@ -37,7 +37,9 @@ export default function Home() {
             }}
           >
             <div className="container max-w-screen-lg mx-auto px-4 hero-content">
-              <h2>Your company should be fully ADA compliant</h2>
+              <h2 className="text-3xl font-bold">
+                Your company should be fully ADA compliant
+              </h2>
               <p>
                 <strong>The first step is an accessibility audit. </strong>Get a
                 detailed view of your website’s accessibility performance with

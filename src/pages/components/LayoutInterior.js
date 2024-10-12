@@ -15,7 +15,7 @@ export default function LayoutInterior({ children, pageTitle }) {
         </div>
       </header>
 
-      <main>
+      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start px-4 py-8 max-w-4xl mx-auto">
         <ContentWrapper>{children}</ContentWrapper>
       </main>
       <Footer />
