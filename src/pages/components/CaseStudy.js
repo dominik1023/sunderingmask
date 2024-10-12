@@ -20,7 +20,7 @@ export default function CaseStudy({
         </div>
 
         <div className="case-study-content">
-          <h2 className="title">{title}</h2>
+          <h3 className="title">{title}</h3>
           <p className="meta">
             <strong>Industry:</strong> {industry} |{" "}
             <strong>Business Size:</strong> {businessSize}
@@ -30,27 +30,27 @@ export default function CaseStudy({
             {technology}
           </p>
 
-          <h3>Objective</h3>
+          <h4>Objective</h4>
           <p>{objective}</p>
 
-          <h3>Background</h3>
+          <h4>Background</h4>
           <p>{background}</p>
 
-          <h3>Approach</h3>
+          <h4>Approach</h4>
           <ul>
             {approach.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
           </ul>
 
-          <h3>Results</h3>
+          <h4>Results</h4>
           <ul>
             {results.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
           </ul>
 
-          <h3>Technologies/Tools</h3>
+          <h4>Technologies/Tools</h4>
           <ul>
             {technologies.map((tech, index) => (
               <li key={index}>{tech}</li>
@@ -86,33 +86,31 @@ export default function CaseStudy({
         }
 
         .title {
-          font-size: 2rem;
+          font-size: 1.6rem;
           font-weight: bold;
-          margin-bottom: 10px;
+          margin-bottom: 32px;
         }
 
         .meta {
           font-size: 1rem;
-          color: #666;
+          color: #111;
           margin-bottom: 10px;
         }
 
         h3 {
-          font-size: 1.5rem;
-          margin-top: 20px;
+          margin-top: 24px;
         }
-
-        p {
-          font-size: 1.2rem;
-          margin-bottom: 20px;
+        h4 {
+          font-size: 1.1rem;
+          margin-top: 24px;
+          margin-bottom: 16px;
+          font-weight: bold;
         }
-
         ul {
           padding-left: 20px;
         }
 
         ul li {
-          font-size: 1.1rem;
           margin-bottom: 10px;
         }
       `}</style>
