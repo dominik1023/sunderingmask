@@ -3,6 +3,7 @@ import Image from "next/image";
 import HeaderNav from "./HeaderNav";
 import Footer from "./Footer";
 import ContentWrapper from "./ContentWrapper";
+import HeroContent from "./HeroContent";
 
 export default function LayoutInterior({ children, pageTitle }) {
   return (
@@ -10,9 +11,7 @@ export default function LayoutInterior({ children, pageTitle }) {
       <header>
         <div className="hero-container">
           <HeaderNav />
-          <div>
-            <h1>{pageTitle}</h1>
-          </div>
+          <HeroContent title={pageTitle} />
         </div>
       </header>
 
