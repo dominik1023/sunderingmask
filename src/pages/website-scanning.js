@@ -16,7 +16,9 @@ const geistMono = localFont({
 
 export default function Home() {
   return (
-    <LayoutInterior>
+    <LayoutInterior
+      pageTitle={"Comprehensive Accessibility Scanning and Reporting"}
+    >
       <div
         className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_20px] 
 
@@ -29,7 +31,6 @@ export default function Home() {
           }}
         >
           <div className="container max-w-screen-lg mx-auto px-4 hero-content">
-            <h1>Comprehensive Accessibility Scanning and Reporting</h1>
             <h2>Your company should be fully ADA compliant</h2>
             <p>
               <strong>The first step is an accessibility audit. </strong>Get a

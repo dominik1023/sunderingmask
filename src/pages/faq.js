@@ -16,9 +16,7 @@ const geistMono = localFont({
 
 export default function Home() {
   return (
-    <LayoutInterior>
-      <h1>FAQ</h1>
-      <a href="/">Home</a>
+    <LayoutInterior pageTitle={"Frequently Asked Questions"}>
       {/* <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">

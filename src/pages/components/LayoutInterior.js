@@ -4,12 +4,15 @@ import HeaderNav from "./HeaderNav";
 import Footer from "./Footer";
 import ContentWrapper from "./ContentWrapper";
 
-export default function LayoutInterior({ children }) {
+export default function LayoutInterior({ children, pageTitle }) {
   return (
     <div>
       <header>
         <div className="hero-container">
           <HeaderNav />
+          <div>
+            <h1>{pageTitle}</h1>
+          </div>
         </div>
       </header>
 

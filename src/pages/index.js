@@ -30,7 +30,7 @@ export default function Home() {
             </h1>
 
             <p>
-              <strong>You don't have to stress over ADA compliance.</strong>
+              <strong>You don't have to stress over ADA compliance. </strong>
               With our personalized solutions, you’ll quickly meet WCAG 2.1
               standards while ensuring your website is user-friendly for
               everyone. Let us handle the details so you can focus on your

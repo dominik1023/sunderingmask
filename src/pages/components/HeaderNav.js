@@ -2,10 +2,10 @@ export default function Footer({ children }) {
   return (
     <>
       <nav className="navigation">
-        <a href="/">Home</a> |<a href="/website-scanning">Website Scanning</a>
+        <a href="/">Home</a> |<a href="/website-scanning">Website Scanning</a>|{" "}
         <a href="/about-accessibility">About Accessibility</a>|{" "}
         <a href="/accessibility-lawsuits">Accessibility Lawsuits</a>|{" "}
-        <a href="/faq">FAQ</a>
+        <a href="/faq">FAQ</a>| <a href="/contact-us">Contact Us</a>|{" "}
       </nav>
       <style jsx>{`
         .navigation {
@@ -23,6 +23,7 @@ export default function Footer({ children }) {
           color: white;
           text-decoration: none;
           padding: 10px;
+          font-size: 0.9rem;
         }
         .navigation a:hover {
           color: #ff6b6b;
