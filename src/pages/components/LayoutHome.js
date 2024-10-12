@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Footer from "./Footer";
 import HeaderNav from "./HeaderNav";
-import ContentWrapper from "./ContentWrapper";
+import ContentWrapperHome from "./ContentWrapperHome"; //
 import HeroContent from "./HeroContent";
 
 export default function LayoutHome({ children }) {
@@ -18,7 +18,7 @@ export default function LayoutHome({ children }) {
         </div>
       </header>
       <main>
-        <ContentWrapper>{children}</ContentWrapper>
+        <ContentWrapperHome>{children}</ContentWrapperHome>
       </main>
       <Footer />
 

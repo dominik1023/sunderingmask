@@ -2,7 +2,7 @@
 
 export default function ContentWrapper({ children }) {
   return (
-    <div className="container max-w-screen-lg mx-auto px-4 hero-content">
+    <div className="container max-w-screen-xl mx-auto px-4 hero-content">
       {children}
     </div>
   );
