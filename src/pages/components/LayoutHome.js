@@ -18,10 +18,10 @@ export default function LayoutHome({ children }) {
           />
         </div>
       </header>
-      <main>
+      <section>
         <AccessibilityScanner />
         <ContentWrapperHome>{children}</ContentWrapperHome>
-      </main>
+      </section>
       <Footer />
 
       <style jsx>{`

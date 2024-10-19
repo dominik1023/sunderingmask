@@ -20,17 +20,22 @@ export default function AccessibilityScanner() {
 
   return (
     <div className="scanner-form">
-      <h2>Enter a URL to scan for accessibility violations:</h2>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="url">Website URL</label>
-        <input
-          type="text"
-          id="url"
-          value={url}
-          onChange={(e) => setUrl(e.target.value)}
-          required
-        />
-        <button type="submit">Scan</button>
+        <div className="scanform">
+          <label className="scanform_label" htmlFor="url">
+            Website URL
+          </label>
+          <input
+            placeholder="Enter your URL to scan for accessibility violations"
+            type="text"
+            className="scanform_input"
+            id="url"
+            value={url}
+            onChange={(e) => setUrl(e.target.value)}
+            required
+          />
+          <button type="submit">Scan</button>
+        </div>
       </form>
       {loading && <p>Scanning...</p>}
       {report && (
@@ -44,7 +49,28 @@ export default function AccessibilityScanner() {
         .scanner-form {
           margin-top: 20px;
           text-align: center;
+          border: 1px dashed red;
+          margin: 0 auto;
+          width: auto;
         }
+        .scanform {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+        }
+        .scanform_label {
+          text-wrap: nowrap;
+          display: inline-block;
+        }
+        .scanform_input {
+          margin-left: 10px;
+          margin-right: 10px;
+          border: 2px solid #999;
+          border-radius: 5px;
+          width: 80%;
+        }
+
         form {
           display: flex;
           flex-direction: column;

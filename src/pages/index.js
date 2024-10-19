@@ -36,7 +36,7 @@ export default function Home() {
               Your Trusted Partner in Accessibility Compliance
             </h1>
             <div className="text-left">
-              <h2>scan and remediate with us! Why trust us? Read below!</h2>
+              {/* <h2>scan and remediate with us! Why trust us? Read below!</h2> */}
               <div
                 className={`infocard-wrapper ${
                   isMobile ? "flex-col" : "flex-row"
@@ -46,7 +46,7 @@ export default function Home() {
                   <InfoCardSmall
                     imageSrc="/images/find-glass-magnifier-search-seo-svgrepo-com.svg"
                     headline="Scan"
-                    paragraph="Comprehensive, non-intrusive website scan to identify ADA compliance issues."
+                    paragraph="Comprehensive, non-intrusive website scan to identify all existing ADA compliance issues."
                     ctaText="Learn More"
                     ctaLink="/scan"
                     showArrow={true}

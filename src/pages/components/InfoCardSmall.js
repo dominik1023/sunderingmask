@@ -14,7 +14,8 @@ export default function InfoCardSmall({
 
   return (
     <>
-      <div
+      <article
+        tabindex="0"
         className={`infocard-container ${
           reverseColors ? "reverse-colors" : ""
         }`}
@@ -34,7 +35,7 @@ export default function InfoCardSmall({
             {svgArrow}
           </div>
         )}
-      </div>
+      </article>
 
       <style jsx>{`
         .infocard-container {

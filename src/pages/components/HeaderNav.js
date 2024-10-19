@@ -3,7 +3,11 @@ import Navigation from "./Navigation";
 export default function HeaderNav({ children }) {
   return (
     <>
-      <nav className="navigation">
+      <nav
+        className="navigation"
+        role="navigation"
+        aria-label="Main navigation"
+      >
         <Navigation />
       </nav>
       {/* <nav className="navigation">
