@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import HeaderNav from "./HeaderNav";
 import ContentWrapperHome from "./ContentWrapperHome"; //
 import HeroContent from "./HeroContent";
+import AccessibilityScanner from "./AccessibilityScanner";
 
 export default function LayoutHome({ children }) {
   return (
@@ -18,6 +19,7 @@ export default function LayoutHome({ children }) {
         </div>
       </header>
       <main>
+        <AccessibilityScanner />
         <ContentWrapperHome>{children}</ContentWrapperHome>
       </main>
       <Footer />

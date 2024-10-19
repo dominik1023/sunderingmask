@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import LayoutInterior from "./components/LayoutInterior";
 import SEO from "./components/SEO";
 
-export default function Home() {
+export default function AboutAccessibility() {
   return (
     <>
       <SEO
