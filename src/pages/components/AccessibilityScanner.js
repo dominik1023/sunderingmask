@@ -75,13 +75,22 @@ export default function AccessibilityScanner() {
               <li key={key} style={{ marginBottom: "20px" }}>
                 <h4>
                   {violations.length > 0
-                    ? `${violations.length} ${key} ${
-                        violations.length === 1 ? "violation" : "violations"
+                    ? `${violations.reduce(
+                        (total, violation) => total + violation.nodes.length,
+                        0
+                      )} ${key} ${
+                        violations.reduce(
+                          (total, violation) => total + violation.nodes.length,
+                          0
+                        ) === 1
+                          ? "violation"
+                          : "violations"
                       }`
                     : `No ${key} violations`}
                 </h4>
+
                 {violations.length > 0 && (
-                  <ul style={{ paddingLeft: "20px", listStyleType: "disc" }}>
+                  <ul style={{ paddingLeft: "0", listStyleType: "none" }}>
                     {violations.map((violation, index) => (
                       <li key={index}>
                         <strong>{violation.description}</strong> <br />
