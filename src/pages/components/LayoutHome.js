@@ -19,8 +19,10 @@ export default function LayoutHome({ children }) {
         </div>
       </header>
       <section>
-        <AccessibilityScanner />
-        <ContentWrapperHome>{children}</ContentWrapperHome>
+        <ContentWrapperHome>
+          <AccessibilityScanner />
+          {children}
+        </ContentWrapperHome>
       </section>
       <Footer />
 
