@@ -58,6 +58,9 @@ export default function AccessibilityScanner() {
         }}
       >
         <h3>Your scan report for this page: {report.title}</h3>
+        <div className="report-disclaimer">
+          <p></p>
+        </div>
         {Object.values(categories).flat().length === 0 ? (
           <p>No violations found.</p>
         ) : (
