@@ -27,7 +27,32 @@ export default function AccessibilityScanner() {
       moderate: [],
       minor: [],
     };
-
+    const categoryMessages = {
+      critical: {
+        withViolations:
+          "Critical violations have the most severe impact on accessibility. These must be fixed immediately.",
+        noViolations:
+          "No critical violations found. This means your website is free of the most severe accessibility issues.",
+      },
+      serious: {
+        withViolations:
+          "Serious violations significantly affect accessibility. These should be addressed to meet compliance standards.",
+        noViolations:
+          "No serious violations found. This indicates your website has fewer major issues that impact accessibility.",
+      },
+      moderate: {
+        withViolations:
+          "Moderate violations can noticeably impact accessibility. These should be fixed to enhance accessibility.",
+        noViolations:
+          "No moderate violations found. Your website seems free from moderate-level accessibility concerns.",
+      },
+      minor: {
+        withViolations:
+          "Minor violations have minimal impact but should still be resolved for optimal accessibility.",
+        noViolations:
+          "No minor violations found. Your website doesn't have small issues affecting accessibility.",
+      },
+    };
     // Organize violations by impact category
     report.violations?.forEach((violation) => {
       if (categories[violation.impact]) {
@@ -73,7 +98,7 @@ export default function AccessibilityScanner() {
           >
             {Object.entries(categories).map(([key, violations]) => (
               <li key={key} style={{ marginBottom: "20px" }}>
-                <h4>
+                <h4 className={key}>
                   {violations.length > 0
                     ? `${violations.reduce(
                         (total, violation) => total + violation.nodes.length,
@@ -86,33 +111,40 @@ export default function AccessibilityScanner() {
                           ? "violation"
                           : "violations"
                       }`
-                    : `No ${key} violations`}
+                    : `No ${key} violations found`}
                 </h4>
 
-                {violations.length > 0 && (
-                  <ul style={{ paddingLeft: "0", listStyleType: "none" }}>
-                    {violations.map((violation, index) => (
-                      <li key={index}>
-                        <strong>{violation.description}</strong> <br />
-                        <a
-                          href={violation.helpUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          More Info
-                        </a>
-                        <ul>
-                          {violation.nodes.map((node, i) => (
-                            <li key={i}>
-                              <strong>Element:</strong> {node.target.join(", ")}{" "}
-                              <br />
-                              <strong>Issue:</strong> {node.failureSummary}
-                            </li>
-                          ))}
-                        </ul>
-                      </li>
-                    ))}
-                  </ul>
+                {violations.length > 0 ? (
+                  <>
+                    <p className="category-explanation">
+                      {categoryMessages[key].withViolations}
+                    </p>
+                    <ul style={{ paddingLeft: "20px", listStyleType: "disc" }}>
+                      {violations.map((violation, index) => (
+                        <li key={index}>
+                          <strong>{violation.description}</strong> <br />
+                          <a
+                            href={violation.helpUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            More Info
+                          </a>
+                          <ul>
+                            {violation.nodes.map((node, i) => (
+                              <li key={i}>
+                                <strong>Element:</strong>{" "}
+                                {node.target.join(", ")} <br />
+                                <strong>Issue:</strong> {node.failureSummary}
+                              </li>
+                            ))}
+                          </ul>
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                ) : (
+                  <p>{categoryMessages[key].noViolations}</p>
                 )}
               </li>
             ))}
@@ -200,27 +232,54 @@ export default function AccessibilityScanner() {
 
   return (
     <div className="scanner-form">
-      <form onSubmit={handleSubmit}>
-        <div className="scanform">
-          <label className="scanform_label" htmlFor="url">
-            Website URL
-          </label>
-          <input
-            placeholder="Enter your URL to scan for accessibility violations"
-            type="text"
-            className="scanform_input"
-            id="url"
-            value={url}
-            onChange={(e) => setUrl(e.target.value)}
-            required
-          />
-          <button type="submit">Scan</button>
-        </div>
-      </form>
+      <div className="scanner-form__container">
+        <form onSubmit={handleSubmit}>
+          <div className="scanform">
+            <label className="scanform_label" htmlFor="url">
+              Website URL
+            </label>
+            <input
+              placeholder="Enter your URL to scan for accessibility violations"
+              type="text"
+              className="scanform_input"
+              id="url"
+              value={url}
+              onChange={(e) => setUrl(e.target.value)}
+              required
+            />
+            <button type="submit">Scan</button>
+          </div>
+        </form>
+      </div>
+
       {loading && <p>Scanning...</p>}
       {report && formatReport()}
 
       <style jsx>{`
+        .critical {
+          color: red;
+        }
+
+        .serious {
+          color: orange;
+        }
+
+        .moderate {
+          color: yellow;
+        }
+
+        .minor {
+          color: green;
+        }
+
+        .category-explanation {
+          font-style: italic;
+          margin-bottom: 1rem;
+        }
+
+        .scanner-form__container {
+          padding: 1rem 0;
+        }
         .report-output {
           border: 2px solid #555;
           padding: 10px;
