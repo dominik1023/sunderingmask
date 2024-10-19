@@ -18,6 +18,174 @@ export default function AccessibilityScanner() {
     setLoading(false);
   };
 
+  const formatReport = () => {
+    if (!report) return null;
+
+    const categories = {
+      critical: [],
+      serious: [],
+      moderate: [],
+      minor: [],
+    };
+
+    // Organize violations by impact category
+    report.violations?.forEach((violation) => {
+      if (categories[violation.impact]) {
+        categories[violation.impact].push(violation);
+      }
+    });
+
+    report.incomplete?.forEach((incomplete) => {
+      if (categories[incomplete.impact]) {
+        categories[incomplete.impact].push(incomplete);
+      }
+    });
+
+    // Format output with violation details
+    return (
+      <div
+        className="report-output"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          padding: "20px",
+          borderRadius: "10px",
+          width: "90%",
+          margin: "auto",
+          boxShadow: "0px 10px 10px 10px rgba(0, 0, 0, 0.1)",
+        }}
+      >
+        <h3>Your scan report for this page: {report.title}</h3>
+        {Object.values(categories).flat().length === 0 ? (
+          <p>No violations found.</p>
+        ) : (
+          <ul
+            style={{
+              textAlign: "left",
+              listStyle: "none",
+              padding: 0,
+            }}
+          >
+            {Object.entries(categories).map(([key, violations]) => (
+              <li key={key} style={{ marginBottom: "20px" }}>
+                <h4>
+                  {violations.length > 0
+                    ? `${violations.length} ${key} ${
+                        violations.length === 1 ? "violation" : "violations"
+                      }`
+                    : `No ${key} violations`}
+                </h4>
+                {violations.length > 0 && (
+                  <ul style={{ paddingLeft: "20px", listStyleType: "disc" }}>
+                    {violations.map((violation, index) => (
+                      <li key={index}>
+                        <strong>{violation.description}</strong> <br />
+                        <a
+                          href={violation.helpUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          More Info
+                        </a>
+                        <ul>
+                          {violation.nodes.map((node, i) => (
+                            <li key={i}>
+                              <strong>Element:</strong> {node.target.join(", ")}{" "}
+                              <br />
+                              <strong>Issue:</strong> {node.failureSummary}
+                            </li>
+                          ))}
+                        </ul>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+    );
+  };
+
+  // const formatReport = () => {
+  //   if (!report) return null;
+
+  //   const categories = {
+  //     critical: [],
+  //     serious: [],
+  //     moderate: [],
+  //     minor: [],
+  //   };
+
+  //   // Group violations by impact
+  //   report.violations?.forEach((violation) => {
+  //     if (categories[violation.impact] !== undefined) {
+  //       categories[violation.impact].push({
+  //         description: violation.description,
+  //         help: violation.help,
+  //         nodes: violation.nodes.map((node) => node.failureSummary).join(", "),
+  //       });
+  //     }
+  //   });
+
+  //   report.incomplete?.forEach((incomplete) => {
+  //     if (categories[incomplete.impact] !== undefined) {
+  //       categories[incomplete.impact].push({
+  //         description: incomplete.description,
+  //         help: incomplete.help,
+  //         nodes: incomplete.nodes.map((node) => node.failureSummary).join(", "),
+  //       });
+  //     }
+  //   });
+
+  //   return (
+  //     <div
+  //       className="report-output"
+  //       style={{
+  //         display: "flex",
+  //         flexDirection: "column",
+  //         alignItems: "center",
+  //         justifyContent: "center",
+  //         padding: "20px",
+  //         borderRadius: "10px",
+  //         backgroundColor: "#f0f0f0",
+  //       }}
+  //     >
+  //       <h3>Scan Report:</h3>
+  //       {Object.keys(categories).every(
+  //         (key) => categories[key].length === 0
+  //       ) ? (
+  //         <p>No violations found.</p>
+  //       ) : (
+  //         Object.entries(categories).map(([key, violations]) => (
+  //           <div key={key} className="category-report">
+  //             <h4>
+  //               {violations.length} {key}{" "}
+  //               {violations.length === 1 ? "violation" : "violations"}
+  //             </h4>
+  //             {violations.length > 0 && (
+  //               <ul>
+  //                 {violations.map((violation, index) => (
+  //                   <li key={index}>
+  //                     <strong>Description:</strong> {violation.description}
+  //                     <br />
+  //                     <strong>How to fix:</strong> {violation.help}
+  //                     <br />
+  //                     <strong>Details:</strong> {violation.nodes}
+  //                   </li>
+  //                 ))}
+  //               </ul>
+  //             )}
+  //           </div>
+  //         ))
+  //       )}
+  //     </div>
+  //   );
+  // };
+
   return (
     <div className="scanner-form">
       <form onSubmit={handleSubmit}>
@@ -38,18 +206,18 @@ export default function AccessibilityScanner() {
         </div>
       </form>
       {loading && <p>Scanning...</p>}
-      {report && (
-        <div>
-          <h3>Scan Report:</h3>
-          <pre>{JSON.stringify(report, null, 2)}</pre>
-        </div>
-      )}
+      {report && formatReport()}
 
       <style jsx>{`
+        .report-output {
+          border: 2px solid #555;
+          padding: 10px;
+          margin-top: 20px;
+          border-radius: 5px;
+        }
         .scanner-form {
           margin-top: 20px;
           text-align: center;
-          border: 1px dashed red;
           margin: 0 auto;
           width: auto;
         }
@@ -70,7 +238,6 @@ export default function AccessibilityScanner() {
           border-radius: 5px;
           width: 80%;
         }
-
         form {
           display: flex;
           flex-direction: column;
@@ -92,6 +259,9 @@ export default function AccessibilityScanner() {
         }
         button:hover {
           background-color: #005bb5;
+        }
+        .report-output {
+          margin-top: 20px;
         }
       `}</style>
     </div>
