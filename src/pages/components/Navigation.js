@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import navData from "./data/nav.json"; // Assuming the JSON is located in the 'data' directory
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import navData from "./data/nav.json";
 
 export default function Navigation() {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -71,7 +73,7 @@ export default function Navigation() {
                       className="dropdown-toggler"
                       onClick={() => toggleDropdown(index)}
                     >
-                      {item.name} <i className="fa fa-angle-down"></i>
+                      {item.name} <FontAwesomeIcon icon={faAngleDown} />
                     </button>
                     <ul
                       className={`dropdown ${dropdowns[index] ? "show" : ""}`}
@@ -190,7 +192,6 @@ export default function Navigation() {
           left: 0;
           background-color: white;
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-          // border-radius: 0.75rem;
           padding: 0.5rem 0;
           list-style: none;
           z-index: 9999;

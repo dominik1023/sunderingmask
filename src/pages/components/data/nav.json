@@ -20,6 +20,10 @@
           "path": "/about-accessibility"
         },
         {
+          "name": "Accessibility Violations",
+          "path": "/accessibility-violations"
+        },
+        {
           "name": "FAQ",
           "path": "/faq"
         }

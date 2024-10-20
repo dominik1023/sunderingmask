@@ -29,7 +29,7 @@ export default function AccessibilityViolations() {
             Let's talk about your scan and accessibility violations you may have
             encountered.
           </h2>
-          <article tabindex="0">
+          <article tabIndex="0">
             <h3>Critical Violations</h3>
             <p>
               These are the "deal breakers." They bring the user’s journey to a
@@ -62,7 +62,7 @@ export default function AccessibilityViolations() {
               </li>
             </ul>
           </article>
-          <article tabindex="0">
+          <article tabIndex="0">
             <h3>Serious Violations</h3>
             <p>
               These are significant headaches. They won’t necessarily stop
@@ -94,7 +94,7 @@ export default function AccessibilityViolations() {
               </li>
             </ul>
           </article>
-          <article tabindex="0">
+          <article tabIndex="0">
             <h3>Moderate Violations</h3>
             <p>
               These issues are like the tiny annoyances that stack up. Users can
@@ -128,7 +128,7 @@ export default function AccessibilityViolations() {
               </li>
             </ul>
           </article>
-          <article tabindex="0">
+          <article tabIndex="0">
             <h3>Minor Violations</h3>
             <p>
               These are the little things. They won’t derail the whole

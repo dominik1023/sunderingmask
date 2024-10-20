@@ -3,7 +3,7 @@
 export default function InfoCard({ imgSrc, headline, paragraph, cta }) {
   return (
     <article
-      tabindex="0"
+      tabIndex="0"
       className="bg-gray-100 border border-gray-200 rounded-lg shadow-lg p-6 max-w-xs sm:max-w-sm mx-auto flex flex-col justify-between h-full min-h-[400px]"
     >
       {/* Background Image Container */}

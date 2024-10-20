@@ -14,7 +14,7 @@ export default function CaseStudy({
 }) {
   return (
     <>
-      <div className="case-study-container">
+      <article tabIndex="0" className="case-study-container">
         <div className="image-container">
           <img src={image} alt={imageAlt} className="case-study-image" />
         </div>
@@ -57,7 +57,7 @@ export default function CaseStudy({
             ))}
           </ul>
         </div>
-      </div>
+      </article>
 
       <style jsx>{`
         .case-study-container {

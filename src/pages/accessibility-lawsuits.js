@@ -46,7 +46,7 @@ export default function AccessibilityLawsuits() {
             costly mistakes but also show your customers that you genuinely care
             about their experience.
           </p>
-          <article tabindex="0">
+          <article tabIndex="0">
             <h2>
               Domino's Pizza Lawsuit: A Landmark Case in Website Accessibility
             </h2>
@@ -68,7 +68,7 @@ export default function AccessibilityLawsuits() {
             </p>
           </article>
           <Divider />
-          <article tabindex="0">
+          <article tabIndex="0">
             <h2>Ashley Furniture Sued for Inaccessible Website Features</h2>
             <p>
               In December 2020, Ashley Furniture was sued in Florida federal
@@ -85,7 +85,7 @@ export default function AccessibilityLawsuits() {
             </p>
           </article>
           <Divider />
-          <article tabindex="0">
+          <article tabIndex="0">
             <h2>
               Walmart's Accessibility Challenges: A Wake-Up Call for Retail
               Giants
@@ -106,7 +106,7 @@ export default function AccessibilityLawsuits() {
             </p>
           </article>
           <Divider />
-          <article tabindex="0">
+          <article tabIndex="0">
             <h2>
               Sweetgreen Lawsuit: The Need for Digital Accessibility in the
               Restaurant Industry
@@ -126,7 +126,7 @@ export default function AccessibilityLawsuits() {
             </p>
           </article>
           <Divider />
-          <article tabindex="0">
+          <article tabIndex="0">
             <h2>
               Foot Locker: Digital Accessibility and Class Action Lawsuits
             </h2>
@@ -146,7 +146,7 @@ export default function AccessibilityLawsuits() {
             </p>
           </article>
           <Divider />
-          <article tabindex="0">
+          <article tabIndex="0">
             <h2>
               Moots Cycles: The Importance of Web Accessibility for Mid-Sized
               Businesses
@@ -166,7 +166,7 @@ export default function AccessibilityLawsuits() {
             </p>
           </article>
           <Divider />
-          <article tabindex="0">
+          <article tabIndex="0">
             <h2>
               Bagatelle Bakery Lawsuit: ADA Compliance in Small Businesses
             </h2>
@@ -184,7 +184,7 @@ export default function AccessibilityLawsuits() {
             </p>
           </article>
           <Divider />
-          <article tabindex="0">
+          <article tabIndex="0">
             <h2>Stargazer Boutique: E-Commerce Accessibility Challenges</h2>
             <p>
               Stargazer Boutique, a small California-based e-commerce site, was
@@ -202,7 +202,7 @@ export default function AccessibilityLawsuits() {
             </p>
           </article>
           <Divider />
-          <article tabindex="0">
+          <article tabIndex="0">
             <h2>Stargazer Boutique: E-Commerce Accessibility Challenges</h2>
             <p>
               Stargazer Boutique, a small California-based e-commerce site, was
@@ -220,7 +220,7 @@ export default function AccessibilityLawsuits() {
             </p>
           </article>
           <Divider />
-          <article tabindex="0">
+          <article tabIndex="0">
             <h2>
               Joe’s Pizza: The Consequences of Inaccessible Online Ordering
             </h2>

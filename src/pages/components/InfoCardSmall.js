@@ -15,7 +15,7 @@ export default function InfoCardSmall({
   return (
     <>
       <article
-        tabindex="0"
+        tabIndex="0"
         className={`infocard-container ${
           reverseColors ? "reverse-colors" : ""
         }`}
