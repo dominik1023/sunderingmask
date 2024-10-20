@@ -82,7 +82,9 @@ export default function AccessibilityScanner() {
           boxShadow: "0px 10px 10px 10px rgba(0, 0, 0, 0.1)",
         }}
       >
-        <h3>Your scan report for this page: {report.title}</h3>
+        <h3 className="report-title">
+          Your scan report for this page: {report.title}
+        </h3>
         <div className="report-disclaimer">
           <p></p>
         </div>
@@ -98,7 +100,7 @@ export default function AccessibilityScanner() {
           >
             {Object.entries(categories).map(([key, violations]) => (
               <li key={key} style={{ marginBottom: "20px" }}>
-                <h4 className={key}>
+                <h4 className={`violations_header ${key}`}>
                   {violations.length > 0
                     ? `${violations.reduce(
                         (total, violation) => total + violation.nodes.length,
@@ -234,16 +236,20 @@ export default function AccessibilityScanner() {
     <div className="scanner-form">
       <div className="scanner-form__container">
         <form onSubmit={handleSubmit}>
+          <h3 style={{ marginBottom: "-10px" }}>
+            How accessible is your website?
+          </h3>
           <div className="scanform">
-            <label className="scanform_label" htmlFor="url">
+            {/* <label className="scanform_label" htmlFor="url">
               Website URL
-            </label>
+            </label> */}
             <input
               placeholder="Enter your URL to scan for accessibility violations"
               type="text"
               className="scanform_input"
               id="url"
               value={url}
+              aria-label="Website URL"
               onChange={(e) => setUrl(e.target.value)}
               required
             />
@@ -256,20 +262,28 @@ export default function AccessibilityScanner() {
       {report && formatReport()}
 
       <style jsx>{`
-        .critical {
-          color: red;
+        :global(.report-title) {
+          font-size: 1.2rem;
+        }
+        :global(.violations_header) {
+          font-size: 1.1rem;
+          font-weight: bold;
         }
 
-        .serious {
-          color: orange;
+        :global(.violations_header.critical) {
+          color: #b22222; /* Firebrick - dark red for better contrast */
         }
 
-        .moderate {
-          color: yellow;
+        :global(.violations_header.serious) {
+          color: #ff4500; /* Dark orange for strong contrast */
         }
 
-        .minor {
-          color: green;
+        :global(.violations_header.moderate) {
+          color: #daa520; /* Goldenrod - darker yellow for readability */
+        }
+
+        :global(.violations_header.minor) {
+          color: #228b22; /* ForestGreen - dark green for good contrast */
         }
 
         .category-explanation {

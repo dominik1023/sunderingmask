@@ -1,7 +1,7 @@
 import Image from "next/image";
 import LayoutInterior from "./components/LayoutInterior";
 import SEO from "./components/SEO";
-import faqData from "./components/faq.json";
+import faqData from "./components/data/faq.json";
 import Link from "next/link";
 
 export default function FAQ() {

@@ -24,9 +24,30 @@ export default function AccessibilityLawsuits() {
         keywords="community, join, example, exclusive content"
       />
       <LayoutInterior pageTitle={"Accessibility Lawsuits"}>
-        <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+        <main className="flex flex-col  row-start-2 items-center sm:items-start">
+          <h2 className="text-3xl font-bold">
+            Don't let your business become the next case study
+          </h2>
+          <p>
+            Imagine your business facing a lawsuit—not because of poor service,
+            faulty products, or any operational failure—but because your website
+            wasn't accessible to everyone. It happens more often than you think,
+            and the consequences are real. Lawsuits related to ADA (Americans
+            with Disabilities Act) violations are on the rise, costing companies
+            millions of dollars, tarnishing reputations, and eroding customer
+            trust.
+          </p>
+          <p>
+            These legal cases reveal the true cost of neglecting digital
+            accessibility. But what if you could prevent it? In this section, we
+            explore real-world examples of companies that faced hefty fines and
+            settlements due to inaccessible digital experiences. You’ll discover
+            how small changes in your website can not only help you avoid these
+            costly mistakes but also show your customers that you genuinely care
+            about their experience.
+          </p>
           <article tabindex="0">
-            <h2 className="text-3xl font-bold">
+            <h2>
               Domino's Pizza Lawsuit: A Landmark Case in Website Accessibility
             </h2>
             <p>

@@ -1,202 +1,240 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
-
-const navItems = [
-  { name: "Home", path: "/" },
-  {
-    name: "Website Scanning",
-    path: "/website-scanning",
-  },
-  {
-    name: "About Us",
-    dropdown: [
-      { name: "About Us", path: "/about-us" },
-      { name: "About Accessibility", path: "/about-accessibility" },
-      { name: "FAQ", path: "/faq" },
-    ],
-  },
-  {
-    name: "Accessibility Lawsuits",
-    path: "/accessibility-lawsuits",
-  },
-  {
-    name: "Case Studies",
-    path: "/case-studies",
-  },
-  {
-    name: "Contact Us",
-    path: "/contact-us",
-  },
-];
+import navData from "./data/nav.json"; // Assuming the JSON is located in the 'data' directory
 
 export default function Navigation() {
-  const [openDropdown, setOpenDropdown] = useState(null);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [navbarOpen, setNavbarOpen] = useState(false);
+  const [dropdowns, setDropdowns] = useState({});
+  const [navItems, setNavItems] = useState([]);
+
+  useEffect(() => {
+    // Load navigation items from the JSON file
+    setNavItems(navData.navItems);
+
+    // Initialize dropdown state for each dropdown item
+    const initialDropdownState = {};
+    navData.navItems.forEach((item, index) => {
+      if (item.dropdown) {
+        initialDropdownState[index] = false;
+      }
+    });
+    setDropdowns(initialDropdownState);
+  }, []);
+
+  const toggleNavbar = () => {
+    setNavbarOpen(!navbarOpen);
+  };
 
   const toggleDropdown = (index) => {
-    setOpenDropdown(openDropdown === index ? null : index);
+    setDropdowns((prevState) => ({
+      ...prevState,
+      [index]: !prevState[index],
+    }));
   };
 
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!mobileMenuOpen);
+  const handleClickOutside = (event) => {
+    if (!event.target.closest(".navbar-dropdown")) {
+      setDropdowns({});
+    }
   };
+
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
 
   return (
-    <nav className="navigation">
-      {/* Mobile Menu Button */}
-      <button className="mobile-menu-btn" onClick={toggleMobileMenu}>
-        {mobileMenuOpen ? "Close" : "Menu"}
-      </button>
+    <nav className="navbar">
+      <div className="container">
+        <div className="navbar-header">
+          <button className="navbar-toggler" onClick={toggleNavbar}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <Link href="#">
+            <p className="logo">
+              Awesome<span>logo</span>
+            </p>
+          </Link>
+        </div>
 
-      {/* Main Navigation */}
-      <ul className={`nav-items ${mobileMenuOpen ? "open" : ""}`}>
-        {navItems.map((item, index) => (
-          <li key={index} className="nav-item">
-            {item.dropdown ? (
-              <>
-                {/* Dropdown button for items with dropdown */}
-                <button
-                  onClick={() => toggleDropdown(index)}
-                  className="nav-link dropdown-btn"
-                >
-                  {item.name}
-                </button>
-                {/* Dropdown menu */}
-                <ul
-                  className={`dropdown ${openDropdown === index ? "open" : ""}`}
-                >
-                  {item.dropdown.map((dropdownItem, idx) => (
-                    <li key={idx}>
-                      <Link href={dropdownItem.path} className="dropdown-link">
-                        {dropdownItem.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </>
-            ) : (
-              // Regular link for non-dropdown items
-              <Link href={item.path} className="nav-link">
-                {item.name}
-              </Link>
-            )}
-          </li>
-        ))}
-      </ul>
+        <div className={`navbar-menu ${navbarOpen ? "active" : ""}`}>
+          <ul className="navbar-nav">
+            {navItems.map((item, index) => (
+              <li key={index} className="navbar-item">
+                {item.dropdown ? (
+                  <div className="navbar-dropdown">
+                    <button
+                      className="dropdown-toggler"
+                      onClick={() => toggleDropdown(index)}
+                    >
+                      {item.name} <i className="fa fa-angle-down"></i>
+                    </button>
+                    <ul
+                      className={`dropdown ${dropdowns[index] ? "show" : ""}`}
+                    >
+                      {item.dropdown.map((dropdownItem, idx) => (
+                        <li key={idx}>
+                          <Link href={dropdownItem.path}>
+                            {dropdownItem.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ) : (
+                  <Link href={item.path}>{item.name}</Link>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
 
       <style jsx>{`
-        .navigation {
-          position: relative;
-        }
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 
-        .nav-items {
-          list-style: none;
-          padding: 0;
-          margin: 0;
+        .navbar,
+        .navbar > .container {
           display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
         }
 
-        .nav-item {
-          position: relative;
+        .navbar {
+          background-color: #fff;
+          padding: 0 1.15rem 0;
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+          border-bottom: 1px solid #eceef3;
         }
 
-        .nav-link {
-          padding: 10px 20px;
-          display: block;
-          text-decoration: none;
-          color: black;
+        .container {
+          max-width: 1170px;
+          margin: 0 auto;
+          padding: 0 15px;
+          margin-top: 1rem;
         }
 
-        .nav-link:hover {
-          background-color: #eee;
+        .logo {
+          font-family: "Roboto", sans-serif;
+          font-size: 1.25rem;
+          font-weight: 500;
         }
 
-        .dropdown {
-          position: absolute;
-          top: 100%;
-          left: 0;
-          display: none;
-          background-color: white;
-          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-          list-style: none;
-          padding: 0;
-          margin: 0;
-          z-index: 1;
+        .navbar-header span {
+          color: #66f;
         }
 
-        .dropdown.open {
-          display: block;
-        }
-
-        .dropdown-link {
-          padding: 10px 20px;
-          display: block;
-          text-decoration: none;
-          color: black;
-        }
-
-        .dropdown-link:hover {
-          background-color: #f0f0f0;
-        }
-
-        /* Mobile Menu */
-        .mobile-menu-btn {
-          display: none;
-          padding: 10px;
-          font-size: 1.2rem;
-          background-color: #0070f3;
-          color: white;
+        .navbar-toggler {
+          background: none;
           border: none;
           cursor: pointer;
+          display: none;
         }
 
-        .mobile-menu-btn:hover {
-          background-color: #005bb5;
+        .navbar-toggler span {
+          display: block;
+          width: 22px;
+          height: 2px;
+          background-color: #a1a1a1;
+          margin-bottom: 0.2rem;
         }
 
         @media (max-width: 768px) {
-          .nav-items {
+          .navbar-toggler {
+            display: block;
+          }
+        }
+
+        .navbar-menu {
+          display: flex;
+          align-items: center;
+        }
+
+        .navbar-menu.active {
+          display: flex;
+        }
+
+        .navbar-nav {
+          list-style: none;
+          display: flex;
+          gap: 20px;
+          margin: 0;
+          padding: 0;
+          margin-left: auto;
+        }
+
+        .navbar-nav > li {
+          position: relative;
+        }
+
+        .navbar-nav > li > a {
+          text-decoration: none;
+          color: #3c4250;
+          padding: 0.5rem 1rem;
+          transition: color 0.2s ease;
+        }
+
+        .navbar-nav > li > a:hover {
+          color: #66f;
+        }
+
+        .navbar-dropdown .dropdown {
+          display: none;
+          position: absolute;
+          top: 150%;
+          left: 0;
+          background-color: white;
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+          // border-radius: 0.75rem;
+          padding: 0.5rem 0;
+          list-style: none;
+          z-index: 9999;
+        }
+
+        .navbar-dropdown .dropdown.show {
+          display: block;
+          padding: 0 20px;
+        }
+
+        .navbar-dropdown .dropdown li a {
+          color: #3c4250;
+          padding: 0.25rem 1rem;
+        }
+
+        .navbar-dropdown .dropdown li a:hover {
+          background-color: #eceef3;
+        }
+
+        .navbar-dropdown .separator {
+          width: 100%;
+          height: 1px;
+          background-color: #eceef3;
+          margin: 9px 0;
+        }
+
+        @media (max-width: 768px) {
+          .navbar-menu {
             display: none;
             flex-direction: column;
             width: 100%;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: white;
           }
 
-          .nav-items.open {
+          .navbar-menu.active {
             display: block;
           }
 
-          .mobile-menu-btn {
-            display: block;
+          .navbar-nav {
+            flex-direction: column;
           }
 
-          .dropdown {
-            position: relative;
-            top: auto;
-            left: auto;
-            box-shadow: none;
-          }
-
-          .dropdown-btn {
-            background: none;
-            border: none;
-            width: 100%;
-            text-align: left;
-            padding: 10px 20px;
-            font-size: 1rem;
-            color: black;
-            cursor: pointer;
-          }
-
-          .dropdown.open {
-            display: block;
-          }
-
-          .dropdown-link {
-            padding-left: 30px;
+          .navbar-nav > li > a {
+            border-bottom: 1px solid #eceef3;
+            padding: 15px;
           }
         }
       `}</style>

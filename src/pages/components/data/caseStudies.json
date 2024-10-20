@@ -1,0 +1,150 @@
+{
+  "caseStudies": [
+    {
+      "title": "Enhancing Accessibility for a Large Furniture Retailer",
+      "industry": "Furniture Retail",
+      "businessSize": "Large Enterprise",
+      "duration": "6 Months",
+      "technology": "Salesforce",
+      "objective": "Improve ADA compliance and enhance the user experience of the retailer's digital platform through comprehensive accessibility audits and remediation.",
+      "background": "A leading furniture retailer needed to address accessibility issues within their Salesforce-driven platform to meet ADA compliance standards. Collaborating with an external accessibility consultancy, the goal was to audit and remediate critical and serious accessibility violations, ensuring a seamless experience for all users.",
+      "approach": [
+        "Conducted extensive accessibility audits using specialized tools to identify critical violations.",
+        "Led remediation efforts by revising templates within Salesforce, focusing on reducing violations and ensuring compliance.",
+        "Managed continuous content updates and refined Salesforce processes for ongoing accessibility improvements.",
+        "Facilitated collaboration between product owners, developers, and cross-functional teams to address complex issues swiftly and effectively."
+      ],
+      "results": [
+        "Reduced accessibility violations by over 70%, achieving significant compliance improvements.",
+        "Streamlined content updates, enhancing overall content accessibility across the platform.",
+        "Enabled seamless coordination between teams, improving the quality and efficiency of project execution.",
+        "Demonstrated operational efficiencies through expert application of DevOps practices, expediting project timelines."
+      ],
+      "technologies": [
+        "Salesforce",
+        "Accessibility Scanning Tools",
+        "ISML",
+        "Jira"
+      ],
+      "image": "https://Accessibility Developers of Houston/crypto-platform.jpg",
+      "imageAlt": "Cryptocurrency trading platform accessibility overhaul"
+    },
+    {
+      "title": "Accessibility Overhaul for a Cryptocurrency Trading Platform",
+      "industry": "Cryptocurrency Trading",
+      "businessSize": "Medium Enterprise",
+      "duration": "3 Months",
+      "technology": "ReactJS",
+      "objective": "Identify and remediate accessibility issues within the trading platform to enhance usability and compliance.",
+      "background": "A prominent cryptocurrency trading company required a rapid assessment and remediation of accessibility issues within their ReactJS-based platform. The challenge was to align the platform's complex functionalities with ADA compliance while maintaining its performance.",
+      "approach": [
+        "Conducted thorough accessibility audits using tools such as WAVE and Axe to pinpoint areas of non-compliance.",
+        "Implemented comprehensive remediation measures, restructuring the ReactJS components and templates to improve accessibility.",
+        "Utilized project management tools for efficient tracking and timely resolution of accessibility concerns.",
+        "Collaborated closely with cross-functional teams to ensure all identified issues were addressed promptly and effectively."
+      ],
+      "results": [
+        "Achieved significant improvements in platform accessibility, enhancing the experience for users with disabilities.",
+        "Enabled the platform to meet ADA compliance standards, mitigating legal risks and fostering inclusivity.",
+        "Improved overall platform performance and user satisfaction through targeted ReactJS optimizations.",
+        "Documented the functionality of hundreds of files, promoting clarity and ease of future maintenance."
+      ],
+      "technologies": [
+        "ReactJS",
+        "Accessibility Scanning Tools (WAVE, Axe)",
+        "Jira"
+      ],
+      "image": "https://Accessibility Developers of Houston/crypto-platform.jpg",
+      "imageAlt": "Cryptocurrency trading platform accessibility overhaul"
+    },
+    {
+      "title": "Developing Accessible Web Components for a Global Testing Services Provider",
+      "industry": "Education and Testing Services",
+      "businessSize": "Large Enterprise",
+      "duration": "6 Months",
+      "technology": "ReactJS, Lit",
+      "objective": "Create accessible web components for the provider's digital platform to improve user experience and ADA compliance.",
+      "background": "A global leader in education and testing services required a revamp of its digital offerings to ensure ADA compliance and improve the user experience across various testing applications. The project focused on developing React-based web components that were accessible from the outset.",
+      "approach": [
+        "Spearheaded the development of over 40 web components using React and Lit, with a focus on accessibility and usability.",
+        "Conducted comprehensive reviews of student testing applications, documenting violations, and prioritizing remediation tasks.",
+        "Developed innovative components like draggable and resizable dialogs/modals to accommodate both mouse and keyboard interactions.",
+        "Fostered a culture of accessibility awareness within the development team through continuous knowledge sharing."
+      ],
+      "results": [
+        "Established a new standard for accessible web components, significantly enhancing the user experience for individuals with disabilities.",
+        "Reduced the number of accessibility violations, promoting inclusivity and ensuring compliance with ADA standards.",
+        "Strengthened the company's reputation as a leader in accessible online proctored testing services."
+      ],
+      "technologies": [
+        "ReactJS",
+        "Lit",
+        "Storybook",
+        "Accessibility Compliance Tools"
+      ],
+      "image": "https://Accessibility Developers of Houston/crypto-platform.jpg",
+      "imageAlt": "Cryptocurrency trading platform accessibility overhaul"
+    },
+    {
+      "title": "Comprehensive Accessibility Program for a Marketing and Data Analytics Firm",
+      "industry": "Marketing and Data Analytics",
+      "businessSize": "Large Enterprise",
+      "duration": "6 Months",
+      "technology": "ReactJS, Headless CMS",
+      "objective": "Implement a company-wide accessibility compliance program and develop ADA-compliant components for the company's flagship website.",
+      "background": "A major marketing and data analytics firm aimed to revamp its flagship website to ensure ADA compliance as part of its Diversity and Inclusivity Initiative. The project required developing accessible components and creating a structured approach to identify and remediate accessibility violations.",
+      "approach": [
+        "Developed custom React modules and templates within a headless CMS to support the website's accessibility goals.",
+        "Spearheaded the identification and remediation of over 2,500 accessibility violations, leading a multi-faceted strategy for ADA compliance.",
+        "Created a comprehensive wiki documenting the remediation progress, strategies, and accessibility milestones.",
+        "Educated development teams on accessibility best practices, fostering a culture that prioritizes ADA compliance."
+      ],
+      "results": [
+        "Successfully achieved ADA compliance across the entire website, mitigating legal risks and enhancing user experience.",
+        "Increased customer engagement by 20% through improved accessibility and user-centered design.",
+        "Established the firm as a leader in digital accessibility within its industry, setting a benchmark for competitors."
+      ],
+      "technologies": [
+        "ReactJS",
+        "Headless CMS",
+        "Accessibility Compliance Tools",
+        "Google Tag Manager",
+        "Storybook"
+      ],
+      "image": "https://Accessibility Developers of Houston/crypto-platform.jpg",
+      "imageAlt": "Cryptocurrency trading platform accessibility overhaul"
+    },
+    {
+      "title": "Accessibility Enhancement for a Mid-Sized Law Firm's Website",
+      "industry": "Legal Services",
+      "businessSize": "Mid-Size Firm",
+      "duration": "4 Months",
+      "technology": "WordPress",
+      "objective": "Improve accessibility and ensure ADA compliance for the firm's WordPress website to enhance user experience for all visitors, including those with disabilities.",
+      "background": "A mid-sized law firm recognized the need to make its WordPress website accessible to all users, including individuals with disabilities. The firm's goal was to comply with ADA and WCAG standards while also improving the website's overall usability and accessibility.",
+      "approach": [
+        "Accessibility Audit: Performed a comprehensive audit using tools like Axe, WAVE, and manual testing to identify accessibility issues across the website, including contrast issues, missing alternative text, and improper use of ARIA roles.",
+        "Remediation Plan: Developed a detailed remediation plan, including adjusting color contrast, adding appropriate ARIA roles, ensuring all interactive elements were keyboard accessible, and fixing navigation issues.",
+        "Content Optimization: Collaborated with the firm's content team to optimize website content, including rewriting text for clarity, adding alternative text for images, and ensuring that all multimedia content was accessible (e.g., captions for videos).",
+        "Plugin Evaluation and Customization: Evaluated existing WordPress plugins and themes for accessibility compliance, removing or replacing non-compliant plugins, and customizing themes to meet accessibility standards.",
+        "Training and Best Practices: Conducted training sessions for the firm's content editors and administrators on creating and maintaining accessible content, ensuring ongoing compliance with accessibility standards."
+      ],
+      "results": [
+        "Improved Compliance: Reduced accessibility violations by 85%, achieving compliance with WCAG 2.1 AA standards.",
+        "Enhanced User Experience: Improved navigation and usability for users with disabilities, leading to increased engagement and positive feedback from clients.",
+        "Content Accessibility: Ensured all new content adhered to accessibility standards, maintaining compliance and reducing the risk of future violations.",
+        "Increased Awareness: Enhanced the firm’s reputation as an inclusive and client-focused organization committed to accessibility."
+      ],
+      "technologies": [
+        "WordPress",
+        "Axe",
+        "WAVE",
+        "ARIA roles",
+        "Accessibility Compliance Tools",
+        "Custom WordPress Plugins and Themes"
+      ],
+      "image": "https://Accessibility Developers of Houston/crypto-platform.jpg",
+      "imageAlt": "Cryptocurrency trading platform accessibility overhaul"
+    }
+  ]
+}

@@ -56,8 +56,9 @@ ul {
 ul li {
   margin-bottom: 0.5rem;
 }
+/* 
 a {
-  color: var(--foreground);
+  color: #000;
   text-decoration: underline;
 }
 
@@ -75,7 +76,7 @@ a:active {
 
 a:link {
   color: #fff;
-}
+} */
 
 @layer utilities {
   .text-balance {

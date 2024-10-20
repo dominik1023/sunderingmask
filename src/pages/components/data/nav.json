@@ -1,0 +1,41 @@
+{
+  "navItems": [
+    {
+      "name": "Home",
+      "path": "/"
+    },
+    {
+      "name": "Accessibility Services",
+      "path": "/accessibility-services"
+    },
+    {
+      "name": "About Us",
+      "dropdown": [
+        {
+          "name": "About Us",
+          "path": "/about-us"
+        },
+        {
+          "name": "About Accessibility",
+          "path": "/about-accessibility"
+        },
+        {
+          "name": "FAQ",
+          "path": "/faq"
+        }
+      ]
+    },
+    {
+      "name": "Accessibility Lawsuits",
+      "path": "/accessibility-lawsuits"
+    },
+    {
+      "name": "Case Studies",
+      "path": "/case-studies"
+    },
+    {
+      "name": "Contact Us",
+      "path": "/contact-us"
+    }
+  ]
+}

@@ -8,6 +8,8 @@ navigation - styles
 footer - styles
 web components - showcase
 links in text are white - adjust
+images throughout the site
+verify all links, especially on the home page
 
 https://www.svgrepo.com/collection/industrial-sharp-ui-icons/ - icons
 

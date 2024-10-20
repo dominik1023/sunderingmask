@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import LayoutInterior from "./components/LayoutInterior";
 import SEO from "./components/SEO";
 import CaseStudyList from "./components/CaseStudyList";
-import caseStudyData from "./components/caseStudies.json";
+import caseStudyData from "./components/data/caseStudies.json";
 export default function Home() {
   return (
     <>
