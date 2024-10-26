@@ -8,26 +8,15 @@ import { useMediaQuery } from "react-responsive";
 
 import SEO from "./components/SEO";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
-
 export default function Home() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
   return (
     <>
       <SEO
-        title="Join Our Community | Accessibility Developers of Houston"
-        description="Become part of an amazing group of people at Accessibility Developers of Houston. Join now and enjoy exclusive content and offers."
-        keywords="community, join, example, exclusive content"
+        title="ADA Compliance for Houston Businesses | Accessibility Experts"
+        description="Get ADA compliant with our Houston website accessibility solutions. We provide scanning, reporting, and WCAG 2.1 remediation to avoid costly lawsuits."
+        keywords="Houston ADA compliance, website accessibility, WCAG 2.1 standards, ADA website audit Houston, accessibility solutions, ADA remediation, avoid lawsuits Houston, ADA compliance services"
       />
       <LayoutHome>
         <main className="flex flex-col items-center sm:items-start">
@@ -45,7 +34,7 @@ export default function Home() {
                 <div className="infocard-wrapper">
                   <InfoCardSmall
                     imageSrc="/images/find-glass-magnifier-search-seo-svgrepo-com.svg"
-                    headline="Scan"
+                    headline="Scan &amp; Get Compliant"
                     paragraph="Comprehensive, non-intrusive website scan to identify all existing ADA compliance issues."
                     ctaText="Learn More"
                     ctaLink="/scan"
@@ -54,7 +43,7 @@ export default function Home() {
                   />
                   <InfoCardSmall
                     imageSrc="/images/delete-remove-uncheck-svgrepo-com.svg"
-                    headline="Report"
+                    headline="Obtain Your Report"
                     paragraph="Clear, actionable reports highlighting compliance issues and prioritized solutions."
                     ctaText="See Sample Report"
                     ctaLink="/report"
@@ -63,7 +52,7 @@ export default function Home() {
                   />
                   <InfoCardSmall
                     imageSrc="/images/check-mark-button-svgrepo-com.svg"
-                    headline="Remediate"
+                    headline="Remediate Problems"
                     paragraph="Personalized remediation to meet WCAG 2.1 standards, ensuring lasting compliance."
                     ctaText="Get Started"
                     ctaLink="/remediate"
@@ -108,7 +97,6 @@ export default function Home() {
             <br />
             <br />
             <h2>The benefits of having an accessible website are clear:</h2>
-            {/* Updated InfoCard layout */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
               <InfoCard
                 imgSrc="/images/usability.png"

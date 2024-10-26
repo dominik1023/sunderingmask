@@ -8,9 +8,9 @@ export default function PrivacyPolicy() {
   return (
     <>
       <SEO
-        title="Join Our Community | Accessibility Developers of Houston"
-        description="Become part of an amazing group of people at Accessibility Developers of Houston. Join now and enjoy exclusive content and offers."
-        keywords="community, join, example, exclusive content"
+        title="ADA Compliance for Houston Businesses | Accessibility Experts"
+        description=""
+        keywords=""
       />
       <LayoutInterior pageTitle={"Privacy Policy"}>
         <main className="flex flex-col  row-start-2 items-center sm:items-start">

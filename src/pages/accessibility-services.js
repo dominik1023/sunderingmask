@@ -8,9 +8,9 @@ export default function Services() {
   return (
     <>
       <SEO
-        title="Join Our Community | Accessibility Developers of Houston"
-        description="Become part of an amazing group of people at Accessibility Developers of Houston. Join now and enjoy exclusive content and offers."
-        keywords="community, join, example, exclusive content"
+        title="Accessibility Services | ADA Compliance Audits by Accessibility Developers of Houston"
+        description="Ensure ADA compliance with fast, accurate accessibility audits. Our expert reports highlight key issues and provide actionable insights to enhance accessibility and user experience."
+        keywords="accessibility services, ADA compliance, WCAG audits, accessibility audit, website accessibility, accessibility reports, SEO advantage, legal compliance, user-friendly website"
       />
       <LayoutInterior pageTitle={"Accessibility Services"}>
         <div

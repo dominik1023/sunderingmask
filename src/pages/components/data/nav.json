@@ -5,7 +5,7 @@
       "path": "/"
     },
     {
-      "name": "Accessibility Services",
+      "name": "Get Compliant",
       "path": "/accessibility-services"
     },
     {
@@ -26,16 +26,16 @@
         {
           "name": "FAQ",
           "path": "/faq"
+        },
+        {
+          "name": "Accessibility Lawsuits",
+          "path": "/accessibility-lawsuits"
+        },
+        {
+          "name": "Case Studies",
+          "path": "/case-studies"
         }
       ]
-    },
-    {
-      "name": "Accessibility Lawsuits",
-      "path": "/accessibility-lawsuits"
-    },
-    {
-      "name": "Case Studies",
-      "path": "/case-studies"
     },
     {
       "name": "Contact Us",

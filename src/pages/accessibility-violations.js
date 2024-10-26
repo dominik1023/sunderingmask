@@ -19,9 +19,9 @@ export default function AccessibilityViolations() {
   return (
     <>
       <SEO
-        title="Join Our Community | Accessibility Developers of Houston"
-        description="Become part of an amazing group of people at Accessibility Developers of Houston. Join now and enjoy exclusive content and offers."
-        keywords="community, join, example, exclusive content"
+        title="Accessibility Violations | Understanding Critical, Serious, Moderate, and Minor Issues"
+        description="Learn about different types of accessibility violations, from critical issues like broken forms to minor annoyances, and how they impact user experience and conversions."
+        keywords="accessibility violations, critical violations, WCAG compliance, ADA compliance, serious violations, moderate violations, minor violations, user experience, screen readers, assistive technology"
       />
       <LayoutInterior pageTitle={"Accessibility Violations"}>
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">

@@ -36,9 +36,9 @@ export default function FAQ() {
   return (
     <>
       <SEO
-        title="Join Our Community | Accessibility Developers of Houston"
-        description="Become part of an amazing group of people at Accessibility Developers of Houston. Join now and enjoy exclusive content and offers."
-        keywords="community, join, example, exclusive content"
+        title="FAQ | Privacy and Confidentiality in ADA Compliance Services"
+        description="Find answers to common questions about our ADA compliance services. Learn how we protect your privacy, ensure confidentiality, and provide secure solutions."
+        keywords="FAQ, ADA compliance, privacy protection, confidentiality, data security, GDPR, CCPA, secure services, anonymized case studies"
       />
       <LayoutInterior pageTitle={"Frequently Asked Questions"}>
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">

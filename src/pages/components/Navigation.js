@@ -56,9 +56,9 @@ export default function Navigation() {
             <span></span>
             <span></span>
           </button>
-          <Link href="#">
+          <Link href="/">
             <p className="logo">
-              Awesome<span>logo</span>
+              Accessibility <span>Developers</span> of Houston, LLC.
             </p>
           </Link>
         </div>

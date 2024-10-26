@@ -8,9 +8,9 @@ export default function AccessibilityStatement() {
   return (
     <>
       <SEO
-        title="Join Our Community | Accessibility Developers of Houston"
-        description="Become part of an amazing group of people at Accessibility Developers of Houston. Join now and enjoy exclusive content and offers."
-        keywords="community, join, example, exclusive content"
+        title="Accessibility Statement | Accessibility Developers of Houston, LLC"
+        description="Accessibility Developers of Houston is committed to WCAG 2.1 Level AA compliance. We welcome feedback on any accessibility barriers you encounter on our website."
+        keywords="accessibility statement, WCAG compliance, WCAG 2.1 AA, ADA compliance, Accessibility Developers of Houston, accessibility feedback, web accessibility, conformant website"
       />
       <LayoutInterior pageTitle={"Accessibility Statement"}>
         <main className="flex flex-col row-start-2 items-center sm:items-start">

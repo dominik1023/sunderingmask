@@ -54,9 +54,9 @@ export default function ContactUs() {
   return (
     <>
       <SEO
-        title="Join Our Community | Accessibility Developers of Houston"
-        description="Become part of an amazing group of people at Accessibility Developers of Houston. Join now and enjoy exclusive content and offers."
-        keywords="community, join, example, exclusive content"
+        title="FAQ | Privacy and Confidentiality in ADA Compliance Services"
+        description=""
+        keywords=""
       />
 
       <LayoutInterior pageTitle="Contact Us">

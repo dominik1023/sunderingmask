@@ -19,9 +19,9 @@ export default function AccessibilityLawsuits() {
   return (
     <>
       <SEO
-        title="Join Our Community | Accessibility Developers of Houston"
-        description="Become part of an amazing group of people at Accessibility Developers of Houston. Join now and enjoy exclusive content and offers."
-        keywords="community, join, example, exclusive content"
+        title="ADA Accessibility Lawsuits | Real-World Examples and Legal Risks"
+        description="Learn how businesses like Domino's and Walmart faced costly ADA accessibility lawsuits. Avoid legal risks by ensuring your website is compliant with WCAG standards."
+        keywords="ADA lawsuits, website accessibility lawsuits, Domino's ADA case, WCAG compliance, digital accessibility, legal risks, ADA compliance, accessible websites, business lawsuits"
       />
       <LayoutInterior pageTitle={"Accessibility Lawsuits"}>
         <main className="flex flex-col  row-start-2 items-center sm:items-start">
