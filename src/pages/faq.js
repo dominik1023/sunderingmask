@@ -50,7 +50,7 @@ export default function FAQ() {
             To provide clarity and address common concerns, we have compiled a
             list of frequently asked questions. If you don&apos;t find the
             answer you&apos;re looking for, feel free to reach out to us
-            directly through our <a href="/contact-us">Contact Us</a>.
+            directly through our <Link href="/contact-us">Contact Us</Link>.
             We&apos;re here to help!
           </p>
           <ul className="faq-list">
