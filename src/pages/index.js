@@ -59,7 +59,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <h2>You don't have to stress over ADA compliance</h2>
+              <h2>You don&apos;t have to stress over ADA compliance</h2>
               <p>
                 With our <strong>personalized solutions</strong>, you&apos;ll
                 quickly meet <strong>WCAG 2.1</strong>
@@ -68,7 +68,8 @@ export default function Home() {
                 business, with full peace of mind.
               </p>
               <h3>
-                Why trust us with your accessibility compliance? It's simple:
+                Why trust us with your accessibility compliance? It&apos;s
+                simple:
               </h3>
               <ul className="list-disc">
                 <li>

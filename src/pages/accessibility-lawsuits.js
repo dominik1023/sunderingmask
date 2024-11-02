@@ -26,16 +26,16 @@ export default function AccessibilityLawsuits() {
       <LayoutInterior pageTitle={"Accessibility Lawsuits"}>
         <main className="flex flex-col  row-start-2 items-center sm:items-start">
           <h2 className="text-3xl font-bold">
-            Don't let your business become the next case study
+            Don&apos;t let your business become the next case study
           </h2>
           <p>
             Imagine your business facing a lawsuit—not because of poor service,
             faulty products, or any operational failure—but because your website
-            wasn't accessible to everyone. It happens more often than you think,
-            and the consequences are real. Lawsuits related to ADA (Americans
-            with Disabilities Act) violations are on the rise, costing companies
-            millions of dollars, tarnishing reputations, and eroding customer
-            trust.
+            wasn&apos;t accessible to everyone. It happens more often than you
+            think, and the consequences are real. Lawsuits related to ADA
+            (Americans with Disabilities Act) violations are on the rise,
+            costing companies millions of dollars, tarnishing reputations, and
+            eroding customer trust.
           </p>
           <p>
             These legal cases reveal the true cost of neglecting digital
@@ -48,7 +48,8 @@ export default function AccessibilityLawsuits() {
           </p>
           <article tabIndex="0">
             <h2>
-              Domino's Pizza Lawsuit: A Landmark Case in Website Accessibility
+              Domino&apos;s Pizza Lawsuit: A Landmark Case in Website
+              Accessibility
             </h2>
             <p>
               Domino&apos;s Pizza faced a high-profile lawsuit in 2019 when a
@@ -87,7 +88,7 @@ export default function AccessibilityLawsuits() {
           <Divider />
           <article tabIndex="0">
             <h2>
-              Walmart's Accessibility Challenges: A Wake-Up Call for Retail
+              Walmart&apos;s Accessibility Challenges: A Wake-Up Call for Retail
               Giants
             </h2>
             <p>

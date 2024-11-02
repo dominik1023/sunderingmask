@@ -19,14 +19,14 @@ export default function AboutAccessibility() {
           no one bothers to speak or guide you to your destination.
         </p>
         <p>
-          That&apos;s how it feels when a website isn't designed with
-          accessibility in mind. Every day, I rely on screen readers to "see"
-          for me, to read out the content on websites, guiding me through menus,
-          links, and buttons. When a site is accessible—meaning it&apos;s
-          structured logically with headings, alt text for images, and properly
-          labeled buttons—everything flows smoothly. I can navigate it
-          independently, whether I&apos;m looking for a service, shopping for a
-          product, or simply reading an article.
+          That&apos;s how it feels when a website isn&apos;t designed with
+          accessibility in mind. Every day, I rely on screen readers to
+          &quot;see&quot; for me, to read out the content on websites, guiding
+          me through menus, links, and buttons. When a site is
+          accessible—meaning it&apos;s structured logically with headings, alt
+          text for images, and properly labeled buttons—everything flows
+          smoothly. I can navigate it independently, whether I&apos;m looking
+          for a service, shopping for a product, or simply reading an article.
         </p>
         <p>
           But when the site isn&apos;t accessible, the frustration is palpable.
@@ -52,12 +52,12 @@ export default function AboutAccessibility() {
           they are a sign of respect. Knowing that a company has taken the time
           to design for accessibility tells me that they understand the
           challenges I face and care enough to make my experience easier.
-          It&apos;s not just about compliance—it's about creating a space where
-          people like me feel welcome. When a site provides me with a seamless
-          experience, it creates a connection. I know this company cares about
-          me—not just as a consumer, but as a person with specific needs.
-          It&apos;s a simple message that says, “We value everyone, and that
-          includes you.”{" "}
+          It&apos;s not just about compliance—it&apos;s about creating a space
+          where people like me feel welcome. When a site provides me with a
+          seamless experience, it creates a connection. I know this company
+          cares about me—not just as a consumer, but as a person with specific
+          needs. It&apos;s a simple message that says, &quot;We value everyone,
+          and that includes you.&quot;
         </p>
         <p>
           Accessibility isn&apos;t just technical; it&apos;s emotional, and it
@@ -93,7 +93,7 @@ export default function AboutAccessibility() {
             search results.
           </li>
           <li>
-            <strong>Mobile-Friendliness and Accessibility Overlap:</strong>{" "}
+            <strong>Mobile-Friendliness and Accessibility Overlap:</strong>
             Google places a high emphasis on mobile-friendly websites, and
             accessibility features such as responsive design, larger clickable
             areas, and simple navigation benefit both mobile users and users
@@ -122,9 +122,9 @@ export default function AboutAccessibility() {
         <p>
           Optimizing your website for accessibility doesn&apos;t just benefit
           users with disabilities; it also helps search engines understand and
-          rank your site better. By improving your site's usability, structure,
-          and mobile-friendliness, you ensure a higher likelihood of both better
-          SEO performance and a broader, more satisfied audience.
+          rank your site better. By improving your site&apos;s usability,
+          structure, and mobile-friendliness, you ensure a higher likelihood of
+          both better SEO performance and a broader, more satisfied audience.
         </p>
 
         <h2>Why Accessibility is Important from a Legal Perspective</h2>
@@ -133,7 +133,7 @@ export default function AboutAccessibility() {
           over the last several years. Many countries have laws requiring
           websites to be accessible to people with disabilities, and failure to
           comply with these regulations can result in costly lawsuits. In the
-          U.S., accessibility lawsuits have surged, largely under the{" "}
+          U.S., accessibility lawsuits have surged, largely under the
           <strong>Americans with Disabilities Act (ADA)</strong>, which mandates
           equal access to goods and services for people with disabilities.
         </p>
@@ -198,10 +198,10 @@ export default function AboutAccessibility() {
         <p>
           With thousands of accessibility lawsuits filed in the past several
           years, ensuring compliance with accessibility standards is not only
-          the right thing to do—it's essential for legal protection. Failure to
-          meet these standards could lead to significant financial and
-          reputational damage, making it crucial for businesses to prioritize
-          accessibility in their digital properties.
+          the right thing to do—it&apos;s essential for legal protection.
+          Failure to meet these standards could lead to significant financial
+          and reputational damage, making it crucial for businesses to
+          prioritize accessibility in their digital properties.
         </p>
       </LayoutInterior>
     </>

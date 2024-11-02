@@ -84,8 +84,8 @@ export default function Services() {
                 Insights
               </h2>
               <p>
-                Whether you're a developer, business owner, or marketer, our
-                reports are designed to be easy to follow. We offer both
+                Whether you&apos;re a developer, business owner, or marketer,
+                our reports are designed to be easy to follow. We offer both
                 technical and non-technical reports, so you can share them with
                 your team, stakeholders, or compliance experts. Our goal is to
                 provide immediate, actionable insights that save you time and
@@ -98,7 +98,7 @@ export default function Services() {
               <p>
                 Not only does website accessibility protect you from costly
                 legal risks, but it also opens your site to a broader audience.
-                By improving accessibility, you're ensuring that
+                By improving accessibility, you&apos;re ensuring that
                 everyone—including those with disabilities—can engage with your
                 brand. This creates a more inclusive, user-friendly experience
                 that increases loyalty, trust, and potential conversions. The

@@ -48,9 +48,10 @@ export default function FAQ() {
           </h2>
           <p>
             To provide clarity and address common concerns, we have compiled a
-            list of frequently asked questions. If you don't find the answer
-            you're looking for, feel free to reach out to us directly through
-            our <a href="/contact-us">Contact Us</a>. We're here to help!
+            list of frequently asked questions. If you don&apos;t find the
+            answer you&apos;re looking for, feel free to reach out to us
+            directly through our <a href="/contact-us">Contact Us</a>.
+            We&apos;re here to help!
           </p>
           <ul className="faq-list">
             {faqData.faqa.map((faq, index) => (

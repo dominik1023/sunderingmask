@@ -26,8 +26,8 @@ export default function AccessibilityViolations() {
       <LayoutInterior pageTitle={"Accessibility Violations"}>
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
           <h2 className="text-3xl font-bold">
-            Let's talk about your scan and accessibility violations you may have
-            encountered.
+            Let&apos;s talk about your scan and accessibility violations you may
+            have encountered.
           </h2>
           <article tabIndex="0">
             <h3>Critical Violations</h3>
@@ -44,22 +44,23 @@ export default function AccessibilityViolations() {
             <ul>
               <li>
                 A form with no labels for the input fields. A screen reader user
-                has no clue what to type. What if they think they're entering
-                their email, but it's asking for their name? They leave.
+                has no clue what to type. What if they think they&apos;re
+                entering their email, but it&apos;s asking for their name? They
+                leave.
               </li>
               <li>
                 A button that does nothing. If your &quot;Submit&quot; button
-                doesn't respond, users think your site is broken.
+                doesn&apos;t respond, users think your site is broken.
               </li>
               <li>
                 A pop-up that can&apos;t be closed by keyboard users.
-                They&apos;re stuck. Can't escape. The frustration is real and
-                immediate.
+                They&apos;re stuck. Can&apos;t escape. The frustration is real
+                and immediate.
               </li>
               <li>
                 Images that serve as navigation (like a big &quot;Shop Now&quot;
-                image) without alt text. Blind users won't know there's even a
-                call to action!
+                image) without alt text. Blind users won&apos;t know
+                there&apos;s even a call to action!
               </li>
             </ul>
           </article>
@@ -92,8 +93,8 @@ export default function AccessibilityViolations() {
               </li>
               <li>
                 Keyboard traps. For keyboard users, getting stuck in a modal
-                window with no escape key means they're slamming the tab key,
-                furious, and eventually giving up.
+                window with no escape key means they&apos;re slamming the tab
+                key, furious, and eventually giving up.
               </li>
             </ul>
           </article>
@@ -112,8 +113,8 @@ export default function AccessibilityViolations() {
             <ul>
               <li>
                 Misusing headings. If a user relies on screen readers to
-                navigate and you skip from Heading 2 to Heading 5, it's like
-                skipping pages in a book. They lose context.
+                navigate and you skip from Heading 2 to Heading 5, it&apos;s
+                like skipping pages in a book. They lose context.
               </li>
               <li>
                 Redundant link text like “Click here.” What are they clicking?
@@ -121,12 +122,12 @@ export default function AccessibilityViolations() {
               </li>
               <li>
                 Forms that are visually cluttered without clear focus
-                indicators. Keyboard users struggle to know which field they're
-                typing in next.
+                indicators. Keyboard users struggle to know which field
+                they&apos;re typing in next.
               </li>
               <li>
                 Pop-ups without focus management. When a pop-up opens, users
-                with disabilities might not know it's there, or worse, they
+                with disabilities might not know it&apos;s there, or worse, they
                 can&apos;t get back to where they were.
               </li>
             </ul>
@@ -136,8 +137,8 @@ export default function AccessibilityViolations() {
             <p>
               These are the little things. They won&apos;t derail the whole
               experience, but they can create friction points that chip away at
-              the overall user satisfaction. It's like having a slightly squeaky
-              door – tolerable, but eventually annoying.
+              the overall user satisfaction. It&apos;s like having a slightly
+              squeaky door – tolerable, but eventually annoying.
               <br />
               <br />
               <strong>Examples:</strong>
@@ -150,13 +151,14 @@ export default function AccessibilityViolations() {
               </li>
               <li>
                 Skipping heading levels. Instead of a neat outline, the
-                structure feels a bit jumbled. Not a disaster, but it doesn't
-                help anyone understand the content flow.
+                structure feels a bit jumbled. Not a disaster, but it
+                doesn&apos;t help anyone understand the content flow.
               </li>
               <li>
-                Too much alt text on decorative images. Sure, you've described
-                it all, but now screen readers have to read through unnecessary
-                details, like describing every flourish in your logo.
+                Too much alt text on decorative images. Sure, you&apos;ve
+                described it all, but now screen readers have to read through
+                unnecessary details, like describing every flourish in your
+                logo.
               </li>
               <li>
                 Overuse of ARIA roles. While ARIA can enhance accessibility, if
