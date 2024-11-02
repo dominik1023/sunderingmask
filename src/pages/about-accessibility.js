@@ -204,6 +204,7 @@ export default function AboutAccessibility() {
           and reputational damage, making it crucial for businesses to
           prioritize accessibility in their digital properties.
         </p>
+        <p>dpg</p>
       </LayoutInterior>
     </>
   );
