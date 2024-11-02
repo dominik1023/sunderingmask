@@ -34,41 +34,42 @@ export default function Home() {
                 <div className="infocard-wrapper">
                   <InfoCardSmall
                     imageSrc="/images/find-glass-magnifier-search-seo-svgrepo-com.svg"
-                    headline="Scan &amp; Get Compliant"
+                    headline="We Scan Your Site"
                     paragraph="Comprehensive, non-intrusive website scan to identify all existing ADA compliance issues."
                     ctaText="Learn More"
-                    ctaLink="/scan"
+                    ctaLink="/accessibility-services"
                     showArrow={true}
                     // svgArrow={<RightArrow />}
                   />
                   <InfoCardSmall
                     imageSrc="/images/delete-remove-uncheck-svgrepo-com.svg"
-                    headline="Obtain Your Report"
+                    headline="You Get Your Report"
                     paragraph="Clear, actionable reports highlighting compliance issues and prioritized solutions."
                     ctaText="See Sample Report"
-                    ctaLink="/report"
+                    ctaLink="/accessibility-violations"
                     showArrow={true}
                     // svgArrow={<RightArrow />}
                   />
                   <InfoCardSmall
                     imageSrc="/images/check-mark-button-svgrepo-com.svg"
-                    headline="Remediate Problems"
+                    headline="We Remediate Violations"
                     paragraph="Personalized remediation to meet WCAG 2.1 standards, ensuring lasting compliance."
-                    ctaText="Get Started"
-                    ctaLink="/remediate"
+                    ctaText="Secure Your Website"
+                    ctaLink="/contact-us"
                   />
                 </div>
               </div>
+              <h2>You don't have to stress over ADA compliance</h2>
               <p>
-                <strong>You don't have to stress over ADA compliance. </strong>
-                With our personalized solutions, you’ll quickly meet WCAG 2.1
+                With our <strong>personalized solutions</strong>, you&apos;ll
+                quickly meet <strong>WCAG 2.1</strong>
                 standards while ensuring your website is user-friendly for
                 everyone. Let us handle the details so you can focus on your
                 business, with full peace of mind.
               </p>
-              <h2>
+              <h3>
                 Why trust us with your accessibility compliance? It's simple:
-              </h2>
+              </h3>
               <ul className="list-disc">
                 <li>
                   <strong>Real world, practical experience</strong> - we have
@@ -100,8 +101,8 @@ export default function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
               <InfoCard
                 imgSrc="/images/usability.png"
-                headline="Enhance Your Website’s Usability"
-                paragraph="Give all users, including those with disabilities, a seamless browsing experience. By improving accessibility, you’ll make your site easier to navigate, creating a better experience that keeps visitors engaged and loyal. The result? More satisfied users and higher conversion rates."
+                headline="Enhance Your Website's Usability"
+                paragraph="Give all users, including those with disabilities, a seamless browsing experience. By improving accessibility, you'll make your site easier to navigate, creating a better experience that keeps visitors engaged and loyal. The result? More satisfied users and higher conversion rates."
                 cta={{ href: "/services", text: "Learn More" }}
               />
               <InfoCard
@@ -114,23 +115,35 @@ export default function Home() {
                 imgSrc="/images/edge.png"
                 headline="Gain a Competitive Edge"
                 paragraph="Set yourself apart from competitors by making your site accessible to everyone. A compliant website not only increases your reach but also positions you as an inclusive brand. Let accessibility be your secret to winning more customers and standing out in your industry."
-                cta={{ href: "/competition", text: "Get Started" }}
+                cta={{ href: "/contact-us", text: "Get Started" }}
               />
             </div>
+            <br />
+            <br />
+
+            <h3>Find your solution with us</h3>
+
             <p>
-              user experience, legal risk avoidance, stand out from your
-              competition
+              Ready to make your website accessible, compliant, and
+              user-friendly? Partner with us to ensure your site meets all ADA
+              and WCAG 2.1 standards, protecting your business and enhancing the
+              user experience for everyone. With our expertise, you can focus on
+              what matters most—growing your business—while we take care of the
+              compliance details. Let&apos;s create a more inclusive digital
+              world, one accessible website at a time.
             </p>
-            <p>remediation, monitoring, training</p>
-            <p>solutions - web components</p>
+            <br />
+            <br />
+            <br />
+            <br />
           </div>
-          <HorizontalCTA
-            headline="Before You Find Your Solution With Us..."
-            paragraph="...see what we offer before you decide."
-            ctaText="Find Out More"
+          {/* <HorizontalCTA
+            headline="Find Your Solution With Us..."
+            paragraph="...see what we offer"
+            ctaText="Get Started"
             ctaLink="/services"
             reverseColors={false}
-          />
+          /> */}
         </main>
       </LayoutHome>
       <style jsx>{`

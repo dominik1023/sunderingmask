@@ -253,7 +253,7 @@ export default function AccessibilityScanner() {
               onChange={(e) => setUrl(e.target.value)}
               required
             />
-            <button type="submit">Scan</button>
+            <button type="submit">Scan 1 Page</button>
           </div>
         </form>
       </div>

@@ -41,30 +41,30 @@ export default function AccessibilityLawsuits() {
             These legal cases reveal the true cost of neglecting digital
             accessibility. But what if you could prevent it? In this section, we
             explore real-world examples of companies that faced hefty fines and
-            settlements due to inaccessible digital experiences. You’ll discover
-            how small changes in your website can not only help you avoid these
-            costly mistakes but also show your customers that you genuinely care
-            about their experience.
+            settlements due to inaccessible digital experiences. You&apos;ll
+            discover how small changes in your website can not only help you
+            avoid these costly mistakes but also show your customers that you
+            genuinely care about their experience.
           </p>
           <article tabIndex="0">
             <h2>
               Domino's Pizza Lawsuit: A Landmark Case in Website Accessibility
             </h2>
             <p>
-              Domino’s Pizza faced a high-profile lawsuit in 2019 when a blind
-              customer, Guillermo Robles, sued the company for not providing an
-              accessible website and mobile app. The case claimed that the
-              platform was not compatible with screen reader technology, making
-              it impossible to place an order. The U.S. Supreme Court allowed
-              the lawsuit to proceed, reinforcing the responsibility of
-              businesses to ensure digital accessibility. While Domino’s argued
-              that the ADA did not apply to digital platforms, the courts
-              disagreed.
+              Domino&apos;s Pizza faced a high-profile lawsuit in 2019 when a
+              blind customer, Guillermo Robles, sued the company for not
+              providing an accessible website and mobile app. The case claimed
+              that the platform was not compatible with screen reader
+              technology, making it impossible to place an order. The U.S.
+              Supreme Court allowed the lawsuit to proceed, reinforcing the
+              responsibility of businesses to ensure digital accessibility.
+              While Domino&apos;s argued that the ADA did not apply to digital
+              platforms, the courts disagreed.
               <br />
               <br />
-              <strong>Outcome: </strong>Domino’s eventually settled the case,
-              and the outcome further solidified that websites must comply with
-              ADA standards.
+              <strong>Outcome: </strong>Domino&apos;s eventually settled the
+              case, and the outcome further solidified that websites must comply
+              with ADA standards.
             </p>
           </article>
           <Divider />
@@ -73,8 +73,8 @@ export default function AccessibilityLawsuits() {
             <p>
               In December 2020, Ashley Furniture was sued in Florida federal
               court by a visually impaired customer, Aishia Petersen, due to its
-              website’s lack of accessibility features, including missing alt
-              text and confusing navigation.
+              website&apos;s lack of accessibility features, including missing
+              alt text and confusing navigation.
               <br />
               <br />
               <strong>Outcome: </strong>
@@ -172,7 +172,7 @@ export default function AccessibilityLawsuits() {
             </h2>
             <p>
               Bagatelle Bakery, a small Kansas bakery, was sued for its
-              website’s inaccessibility, which prevented visually impaired
+              website&apos;s inaccessibility, which prevented visually impaired
               customers from using screen readers to access the menu or place
               orders online.
               <br />
@@ -222,19 +222,19 @@ export default function AccessibilityLawsuits() {
           <Divider />
           <article tabIndex="0">
             <h2>
-              Joe’s Pizza: The Consequences of Inaccessible Online Ordering
+              Joe&apos;s Pizza: The Consequences of Inaccessible Online Ordering
             </h2>
             <p>
-              Joe’s Pizza was sued for failing to provide an accessible online
-              ordering system for visually impaired customers. The lawsuit
-              alleged that the website was incompatible with screen reader
-              technology.
+              Joe&apos;s Pizza was sued for failing to provide an accessible
+              online ordering system for visually impaired customers. The
+              lawsuit alleged that the website was incompatible with screen
+              reader technology.
               <br />
               <br />
               <strong>Outcome: </strong>
-              Joe’s Pizza resolved the case by updating its website to comply
-              with ADA standards, ensuring a more inclusive online ordering
-              experience.
+              Joe&apos;s Pizza resolved the case by updating its website to
+              comply with ADA standards, ensuring a more inclusive online
+              ordering experience.
             </p>
           </article>
         </main>

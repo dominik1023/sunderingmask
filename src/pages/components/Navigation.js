@@ -80,7 +80,10 @@ export default function Navigation() {
                     >
                       {item.dropdown.map((dropdownItem, idx) => (
                         <li key={idx}>
-                          <Link href={dropdownItem.path}>
+                          <Link
+                            style={{ textWrap: "nowrap" }}
+                            href={dropdownItem.path}
+                          >
                             {dropdownItem.name}
                           </Link>
                         </li>
@@ -106,7 +109,13 @@ export default function Navigation() {
           align-items: center;
           width: 100%;
         }
-
+        .navbar a {
+          text-wrap: nowrap;
+        }
+        .navbar a:hover {
+          color: red;
+          font-weight: bold;
+        }
         .navbar {
           background-color: #fff;
           padding: 0 1.15rem 0;

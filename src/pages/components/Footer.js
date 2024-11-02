@@ -10,12 +10,17 @@ export default function Footer({ children }) {
       className="row-start-3 flex gap-6 flex-wrap items-center justify-center"
     >
       <div>
+        <br />
+        <br />
+
         <p>
           <a href="/privacy-policy">Privacy Policy</a> |{" "}
           <a href="/accessibility-statement">Accessibility Statement</a> &copy;
           {currentYear} Accessibility Developers of Houston, LLC. All Rights
           Reserved.
         </p>
+        <br />
+        <br />
 
         {/* <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"

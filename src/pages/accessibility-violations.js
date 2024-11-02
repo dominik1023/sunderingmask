@@ -32,12 +32,12 @@ export default function AccessibilityViolations() {
           <article tabIndex="0">
             <h3>Critical Violations</h3>
             <p>
-              These are the "deal breakers." They bring the user’s journey to a
-              screeching halt, especially for those using assistive technologies
-              like screen readers. Imagine a blind user who hits a roadblock and
-              cannot move forward. These issues are showstoppers and create the
-              worst user experiences, often resulting in frustration and lost
-              conversions. <br />
+              These are the &quot;deal breakers.&quot; They bring the
+              user&apos;s journey to a screeching halt, especially for those
+              using assistive technologies like screen readers. Imagine a blind
+              user who hits a roadblock and cannot move forward. These issues
+              are showstoppers and create the worst user experiences, often
+              resulting in frustration and lost conversions. <br />
               <br />
               <strong>Examples:</strong>
             </p>
@@ -48,24 +48,25 @@ export default function AccessibilityViolations() {
                 their email, but it's asking for their name? They leave.
               </li>
               <li>
-                A button that does nothing. If your "Submit" button doesn't
-                respond, users think your site is broken.
+                A button that does nothing. If your &quot;Submit&quot; button
+                doesn't respond, users think your site is broken.
               </li>
               <li>
-                A pop-up that can’t be closed by keyboard users. They’re stuck.
-                Can't escape. The frustration is real and immediate.
+                A pop-up that can&apos;t be closed by keyboard users.
+                They&apos;re stuck. Can't escape. The frustration is real and
+                immediate.
               </li>
               <li>
-                Images that serve as navigation (like a big "Shop Now" image)
-                without alt text. Blind users won't know there's even a call to
-                action!
+                Images that serve as navigation (like a big &quot;Shop Now&quot;
+                image) without alt text. Blind users won't know there's even a
+                call to action!
               </li>
             </ul>
           </article>
           <article tabIndex="0">
             <h3>Serious Violations</h3>
             <p>
-              These are significant headaches. They won’t necessarily stop
+              These are significant headaches. They won&apos;t necessarily stop
               someone in their tracks, but they will make their experience
               cumbersome and frustrating. Think of these as road bumps:
               irritating enough to ruin the experience but not always fatal.
@@ -75,17 +76,19 @@ export default function AccessibilityViolations() {
             </p>
             <ul>
               <li>
-                Links that don’t look like links. A visually impaired user
-                tabbing through the page won’t know where they can click.
+                Links that don&apos;t look like links. A visually impaired user
+                tabbing through the page won&apos;t know where they can click.
               </li>
               <li>
-                Form elements without clear instructions. What does "required"
-                mean if it’s not labeled? Imagine entering a credit card number,
-                only to be told “error” with no reason why.
+                Form elements without clear instructions. What does
+                &quot;required&quot; mean if it&apos;s not labeled? Imagine
+                entering a credit card number, only to be told “error” with no
+                reason why.
               </li>
               <li>
-                Poor color contrast. Maybe your "Buy Now" button blends into the
-                background. Users with low vision can’t even see it.
+                Poor color contrast. Maybe your &quot;Buy Now&quot; button
+                blends into the background. Users with low vision can&apos;t
+                even see it.
               </li>
               <li>
                 Keyboard traps. For keyboard users, getting stuck in a modal
@@ -99,9 +102,9 @@ export default function AccessibilityViolations() {
             <p>
               These issues are like the tiny annoyances that stack up. Users can
               get past them, but the more they encounter, the more likely they
-              are to abandon their visit altogether. It’s the equivalent of a
-              slow-loading website: not bad enough to crash, but enough to drive
-              users away over time.
+              are to abandon their visit altogether. It&apos;s the equivalent of
+              a slow-loading website: not bad enough to crash, but enough to
+              drive users away over time.
               <br />
               <br />
               <strong>Examples:</strong>
@@ -114,7 +117,7 @@ export default function AccessibilityViolations() {
               </li>
               <li>
                 Redundant link text like “Click here.” What are they clicking?
-                Where is "here"? It forces users to rely on guesswork.
+                Where is &quot;here&quot;? It forces users to rely on guesswork.
               </li>
               <li>
                 Forms that are visually cluttered without clear focus
@@ -124,14 +127,14 @@ export default function AccessibilityViolations() {
               <li>
                 Pop-ups without focus management. When a pop-up opens, users
                 with disabilities might not know it's there, or worse, they
-                can’t get back to where they were.
+                can&apos;t get back to where they were.
               </li>
             </ul>
           </article>
           <article tabIndex="0">
             <h3>Minor Violations</h3>
             <p>
-              These are the little things. They won’t derail the whole
+              These are the little things. They won&apos;t derail the whole
               experience, but they can create friction points that chip away at
               the overall user satisfaction. It's like having a slightly squeaky
               door – tolerable, but eventually annoying.
@@ -142,8 +145,8 @@ export default function AccessibilityViolations() {
             <ul>
               <li>
                 Using placeholder text as a form label. Looks pretty, but as
-                soon as users start typing, the hint disappears, and now they’ve
-                forgotten what they were supposed to input.
+                soon as users start typing, the hint disappears, and now
+                they&apos;ve forgotten what they were supposed to input.
               </li>
               <li>
                 Skipping heading levels. Instead of a neat outline, the
@@ -162,6 +165,7 @@ export default function AccessibilityViolations() {
               </li>
             </ul>
           </article>
+          <div></div>
         </main>
       </LayoutInterior>
     </>

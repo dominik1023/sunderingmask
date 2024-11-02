@@ -15,19 +15,22 @@ export default function CaseStudy({
   return (
     <>
       <article tabIndex="0" className="case-study-container">
-        <div className="image-container">
+        {/* <div className="image-container">
           <img src={image} alt={imageAlt} className="case-study-image" />
-        </div>
+        </div> */}
 
         <div className="case-study-content">
           <h3 className="title">{title}</h3>
+          <img src={image} alt={imageAlt} className="case-study-image" />
           <p className="meta">
-            <strong>Industry:</strong> {industry} |{" "}
+            <strong>Industry:</strong> {industry}
+            <br />
             <strong>Business Size:</strong> {businessSize}
           </p>
           <p className="meta">
-            <strong>Duration:</strong> {duration} | <strong>Technology:</strong>{" "}
-            {technology}
+            <strong>Duration:</strong> {duration}
+            <br />
+            <strong>Technology:</strong> {technology}
           </p>
 
           <h4>Objective</h4>
@@ -75,10 +78,12 @@ export default function CaseStudy({
         }
 
         .case-study-image {
-          max-width: 100%;
+          max-width: 65%;
           height: auto;
           border-radius: 8px;
           margin-bottom: 20px;
+          margin-left: 20px;
+          float: right;
         }
 
         .case-study-content {

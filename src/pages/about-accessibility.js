@@ -19,57 +19,58 @@ export default function AboutAccessibility() {
           no one bothers to speak or guide you to your destination.
         </p>
         <p>
-          That’s how it feels when a website isn't designed with accessibility
-          in mind. Every day, I rely on screen readers to "see" for me, to read
-          out the content on websites, guiding me through menus, links, and
-          buttons. When a site is accessible—meaning it’s structured logically
-          with headings, alt text for images, and properly labeled
-          buttons—everything flows smoothly. I can navigate it independently,
-          whether I’m looking for a service, shopping for a product, or simply
-          reading an article.
+          That&apos;s how it feels when a website isn't designed with
+          accessibility in mind. Every day, I rely on screen readers to "see"
+          for me, to read out the content on websites, guiding me through menus,
+          links, and buttons. When a site is accessible—meaning it&apos;s
+          structured logically with headings, alt text for images, and properly
+          labeled buttons—everything flows smoothly. I can navigate it
+          independently, whether I&apos;m looking for a service, shopping for a
+          product, or simply reading an article.
         </p>
         <p>
-          But when the site isn’t accessible, the frustration is palpable.
-          Buttons aren’t labeled, links are jumbled together, and images have no
-          descriptions. Suddenly, the experience becomes disorienting, like
-          walking through a maze with no exit.
+          But when the site isn&apos;t accessible, the frustration is palpable.
+          Buttons aren&apos;t labeled, links are jumbled together, and images
+          have no descriptions. Suddenly, the experience becomes disorienting,
+          like walking through a maze with no exit.
         </p>
         <p>
           Let me give you a simple example: imagine trying to purchase a shirt.
-          For most, it’s a visual experience—seeing colors, patterns, and
+          For most, it&apos;s a visual experience—seeing colors, patterns, and
           textures. For me, I rely on written descriptions and alt text. If a
-          website doesn’t provide this, I’m left guessing. Should I risk buying
-          it without being sure of what I’m getting? If I find myself on an
-          accessible website, I immediately feel a sense of relief. I know that
-          this company values me as a customer, and my confidence in their brand
-          soars. This kind of attention to detail doesn’t just help me complete
-          a transaction—it builds trust.
+          website doesn&apos;t provide this, I&apos;m left guessing. Should I
+          risk buying it without being sure of what I&apos;m getting? If I find
+          myself on an accessible website, I immediately feel a sense of relief.
+          I know that this company values me as a customer, and my confidence in
+          their brand soars. This kind of attention to detail doesn&apos;t just
+          help me complete a transaction—it builds trust.
         </p>
         <p>
           <strong>
-            Accessible websites don’t just serve a functional purpose;
+            Accessible websites don&apos;t just serve a functional purpose;
           </strong>
           they are a sign of respect. Knowing that a company has taken the time
           to design for accessibility tells me that they understand the
-          challenges I face and care enough to make my experience easier. It’s
-          not just about compliance—it's about creating a space where people
-          like me feel welcome. When a site provides me with a seamless
+          challenges I face and care enough to make my experience easier.
+          It&apos;s not just about compliance—it's about creating a space where
+          people like me feel welcome. When a site provides me with a seamless
           experience, it creates a connection. I know this company cares about
-          me—not just as a consumer, but as a person with specific needs. It’s a
-          simple message that says, “We value everyone, and that includes you.”{" "}
+          me—not just as a consumer, but as a person with specific needs.
+          It&apos;s a simple message that says, “We value everyone, and that
+          includes you.”{" "}
         </p>
         <p>
-          Accessibility isn’t just technical; it’s emotional, and it makes all
-          the difference.
+          Accessibility isn&apos;t just technical; it&apos;s emotional, and it
+          makes all the difference.
         </p>
         <h2>Why Accessibility is Important from an SEO Perspective </h2>
         <p>
-          Accessibility is not just a moral obligation; it’s also a powerful
-          tool for search engine optimization (SEO). When a website is designed
-          with accessibility in mind, it becomes more crawlable and indexable by
-          search engines. This means that websites that prioritize accessibility
-          can rank higher in search results, which can lead to increased traffic
-          and revenue.
+          Accessibility is not just a moral obligation; it&apos;s also a
+          powerful tool for search engine optimization (SEO). When a website is
+          designed with accessibility in mind, it becomes more crawlable and
+          indexable by search engines. This means that websites that prioritize
+          accessibility can rank higher in search results, which can lead to
+          increased traffic and revenue.
         </p>
         <ol>
           <li>
@@ -77,8 +78,8 @@ export default function AboutAccessibility() {
             Google prioritize user experience. When your website is accessible,
             it becomes easier to navigate for all users, including those with
             disabilities. This results in longer site visits, lower bounce
-            rates, and more engagement—all factors that Google’s algorithms take
-            into account for ranking.
+            rates, and more engagement—all factors that Google&apos;s algorithms
+            take into account for ranking.
           </li>
           <li>
             <strong>Better Structured Content:</strong> Accessibility requires
@@ -96,7 +97,7 @@ export default function AboutAccessibility() {
             Google places a high emphasis on mobile-friendly websites, and
             accessibility features such as responsive design, larger clickable
             areas, and simple navigation benefit both mobile users and users
-            with disabilities. This overlap strengthens your site’s SEO
+            with disabilities. This overlap strengthens your site&apos;s SEO
             performance by ensuring it performs well on all devices and for all
             users.
           </li>
@@ -112,18 +113,18 @@ export default function AboutAccessibility() {
           <li>
             <strong>Compliance with Web Standards:</strong> Meeting
             accessibility standards like WCAG 2.1 (Web Content Accessibility
-            Guidelines) aligns with Google’s best practices for web development.
-            These standards encourage the use of proper HTML markup, fast
-            loading times, and a clean, uncluttered design—all of which are
-            important for SEO as well.
+            Guidelines) aligns with Google&apos;s best practices for web
+            development. These standards encourage the use of proper HTML
+            markup, fast loading times, and a clean, uncluttered design—all of
+            which are important for SEO as well.
           </li>
         </ol>
         <p>
-          Optimizing your website for accessibility doesn’t just benefit users
-          with disabilities; it also helps search engines understand and rank
-          your site better. By improving your site's usability, structure, and
-          mobile-friendliness, you ensure a higher likelihood of both better SEO
-          performance and a broader, more satisfied audience.
+          Optimizing your website for accessibility doesn&apos;t just benefit
+          users with disabilities; it also helps search engines understand and
+          rank your site better. By improving your site's usability, structure,
+          and mobile-friendliness, you ensure a higher likelihood of both better
+          SEO performance and a broader, more satisfied audience.
         </p>
 
         <h2>Why Accessibility is Important from a Legal Perspective</h2>
@@ -162,8 +163,8 @@ export default function AboutAccessibility() {
           lawsuits can range from $10,000 to over $10,000,000, depending on the
           severity and scale of the violations. On top of fines and legal fees,
           businesses face reputational damage, as these lawsuits are often
-          public, damaging a brand’s image by showing it does not prioritize
-          inclusivity.
+          public, damaging a brand&apos;s image by showing it does not
+          prioritize inclusivity.
         </p>
         <h3>Key Regulations and Guidelines</h3>
 
@@ -172,7 +173,7 @@ export default function AboutAccessibility() {
             Americans with Disabilities Act (ADA): Though it was enacted in
             1990, the ADA has been widely applied to digital properties in
             recent years. Courts have increasingly ruled that websites fall
-            under the ADA’s definition of “places of public accommodation.”
+            under the ADA&apos;s definition of “places of public accommodation.”
           </li>
           <li>
             Section 508 of the Rehabilitation Act: This law requires federal
