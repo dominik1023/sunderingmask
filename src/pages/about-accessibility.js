@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import localFont from "next/font/local";
 import LayoutInterior from "./components/LayoutInterior";
 import SEO from "./components/SEO";

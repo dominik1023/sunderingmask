@@ -1,5 +1,5 @@
 import { useMediaQuery } from "react-responsive";
-
+import Link from "next/link";
 export default function InfoCardSmall({
   imageSrc,
   headline,
@@ -26,9 +26,9 @@ export default function InfoCardSmall({
         <div className="text-content">
           <h2 className="headline">{headline}</h2>
           <p className="paragraph">{paragraph}</p>
-          <a href={ctaLink} className="cta-button">
+          <Link href={ctaLink} className="cta-button">
             {ctaText}
-          </a>
+          </Link>
         </div>
         {showArrow && svgArrow && (
           <div className={`arrow ${isMobile ? "down" : "right"}`}>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import LayoutInterior from "./components/LayoutInterior";
 import Image from "next/image";
+import Link from "next/link";
 import localFont from "next/font/local";
 import SEO from "./components/SEO";
 

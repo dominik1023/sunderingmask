@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import localFont from "next/font/local";
 import LayoutInterior from "./components/LayoutInterior";
 import Divider from "./components/Divider";
@@ -138,7 +139,7 @@ export default function AccessibilityViolations() {
               These are the little things. They won&apos;t derail the whole
               experience, but they can create friction points that chip away at
               the overall user satisfaction. It&apos;s like having a slightly
-              squeaky door – tolerable, but eventually annoying.
+              squeaky door, it&apos;s tolerable, but eventually annoying.
               <br />
               <br />
               <strong>Examples:</strong>

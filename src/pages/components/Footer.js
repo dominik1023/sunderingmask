@@ -1,5 +1,5 @@
-// components/LayoutHome.js
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer({ children }) {
   const currentYear = new Date().getFullYear(); // Get current year dynamically
@@ -14,8 +14,9 @@ export default function Footer({ children }) {
         <br />
 
         <p>
-          <a href="/privacy-policy">Privacy Policy</a> |{" "}
-          <a href="/accessibility-statement">Accessibility Statement</a> &copy;
+          <Link href="/privacy-policy">Privacy Policy</Link> |{" "}
+          <Link href="/accessibility-statement">Accessibility Statement</Link>{" "}
+          &copy;
           {currentYear} Accessibility Developers of Houston, LLC. All Rights
           Reserved.
         </p>

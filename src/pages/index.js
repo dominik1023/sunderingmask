@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import LayoutHome from "./components/LayoutHome";
 import localFont from "next/font/local";
 import InfoCard from "./components/InfoCard";
@@ -76,7 +77,8 @@ export default function Home() {
                   <strong>Real world, practical experience</strong> - we have
                   catered to the accessibility needs of many companies, of all
                   sizes and industries. See our{" "}
-                  <a href="/case-studies">Case Studies</a> for more information.
+                  <Link href="/case-studies">Case Studies</Link> for more
+                  information.
                 </li>
                 <li>
                   <strong>Experience across multiple systems</strong> -
