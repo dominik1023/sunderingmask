@@ -16,7 +16,7 @@ export default function CaseStudies() {
         <h2 className="text-3xl font-bold">
           Accessibility Remediation Services
         </h2>
-        <CaseStudyList caseStudies={caseStudyData.caseStudies} />
+        {/* <CaseStudyList caseStudies={caseStudyData.caseStudies} /> */}
       </LayoutInterior>
     </>
   );
