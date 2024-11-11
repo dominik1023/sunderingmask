@@ -1,7 +1,7 @@
 import Image from "next/image";
 import LayoutInterior from "./components/LayoutInterior";
 import SEO from "./components/SEO";
-import faqData from "./components/data/faq.json";
+// import faqData from "./components/data/faq.json";
 import Link from "next/link";
 
 export default function FAQ() {
@@ -53,14 +53,14 @@ export default function FAQ() {
             directly through our <Link href="/contact-us">Contact Us</Link>.
             We&apos;re here to help!
           </p>
-          <ul className="faq-list">
+          {/* <ul className="faq-list">
             {faqData.faqa.map((faq, index) => (
               <li key={index} className="faq-item">
                 <h3>{faq.question}</h3>
                 <p>{parseLinks(faq.answer)}</p>
               </li>
             ))}
-          </ul>
+          </ul> */}
         </main>
       </LayoutInterior>
     </>

@@ -1,9 +1,9 @@
-import Image from "next/image";
-import localFont from "next/font/local";
+// import Image from "next/image";
+// import localFont from "next/font/local";
 import LayoutInterior from "./components/LayoutInterior";
 import SEO from "./components/SEO";
-import CaseStudyList from "./components/CaseStudyList";
-import caseStudyData from "./components/data/caseStudies.json";
+// import CaseStudyList from "./components/CaseStudyList";
+// import caseStudyData from "./components/data/caseStudies.json";
 export default function CaseStudies() {
   return (
     <>
