@@ -1,5 +1,6 @@
 import { useMediaQuery } from "react-responsive";
 import Link from "next/link";
+
 export default function InfoCardSmall({
   imageSrc,
   headline,
@@ -10,6 +11,12 @@ export default function InfoCardSmall({
   showArrow = false,
   svgArrow,
 }) {
+  // Default values for props to prevent undefined errors
+  const safeImageSrc = imageSrc || "/placeholder.png"; // Fallback image
+  const safeHeadline = headline || "Default Headline";
+  const safeParagraph = paragraph || "Default paragraph text goes here.";
+  const safeCtaText = ctaText || "Learn More";
+  const safeCtaLink = ctaLink || "#"; // Fallback CTA link
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
   return (
@@ -21,14 +28,22 @@ export default function InfoCardSmall({
         }`}
       >
         <div className="image-container">
-          <img src={imageSrc} alt={headline} className="infocard-image" />
+          <img
+            src={safeImageSrc}
+            alt={safeHeadline}
+            className="infocard-image"
+          />
         </div>
         <div className="text-content">
-          <h2 className="headline">{headline}</h2>
-          <p className="paragraph">{paragraph}</p>
-          <Link href={ctaLink} className="cta-button">
-            {ctaText}
-          </Link>
+          <h2 className="headline">{safeHeadline}</h2>
+          <p className="paragraph">{safeParagraph}</p>
+          {safeCtaLink ? (
+            <Link href={safeCtaLink}>
+              <a className="cta-button">{safeCtaText}</a>
+            </Link>
+          ) : (
+            <div className="cta-button disabled">No CTA Available</div>
+          )}
         </div>
         {showArrow && svgArrow && (
           <div className={`arrow ${isMobile ? "down" : "right"}`}>
@@ -66,14 +81,11 @@ export default function InfoCardSmall({
         .infocard-image {
           width: 50%;
           height: 50%;
-          position: absolute; /* Allows positioning relative to .image-container */
-          left: 50%; /* Horizontally centers the image */
-          top: 50%; /* Vertically centers the image */
-          transform: translate(
-            -50%,
-            -50%
-          ); /* Offsets the element by 50% of its width and height for true centering */
-          border-radius: 8px; /* Keeps the rounded corners */
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          border-radius: 8px;
         }
 
         .text-content {
@@ -102,16 +114,22 @@ export default function InfoCardSmall({
           transition: background-color 0.3s ease;
         }
 
+        .cta-button.disabled {
+          background-color: #e5e5e5;
+          color: #aaa;
+          cursor: not-allowed;
+        }
+
         .reverse-colors .cta-button {
           background-color: white;
           color: #0070f3;
         }
 
-        .cta-button:hover {
+        .cta-button:hover:not(.disabled) {
           background-color: #005bb5;
         }
 
-        .reverse-colors .cta-button:hover {
+        .reverse-colors .cta-button:hover:not(.disabled) {
           background-color: #e5e5e5;
         }
 
@@ -120,7 +138,7 @@ export default function InfoCardSmall({
           justify-content: center;
           align-items: center;
           position: absolute;
-          right: -30px; /* Positioned arrow to the right */
+          right: -30px;
           top: 50%;
           transform: translateY(-50%);
         }
@@ -132,7 +150,7 @@ export default function InfoCardSmall({
         .down {
           position: static;
           margin-top: 20px;
-          transform: rotate(90deg); /* Arrow pointing down on mobile */
+          transform: rotate(90deg);
         }
       `}</style>
     </>
