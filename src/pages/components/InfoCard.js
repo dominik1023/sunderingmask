@@ -1,6 +1,13 @@
 // src/components/InfoCard.js
 import Link from "next/link";
+
 export default function InfoCard({ imgSrc, headline, paragraph, cta }) {
+  // Default values for props to prevent undefined errors
+  const safeImgSrc = imgSrc || "/placeholder.png"; // Fallback image
+  const safeHeadline = headline || "Default Headline";
+  const safeParagraph = paragraph || "Default paragraph text goes here.";
+  const safeCta = cta || { href: "#", text: "Learn More" }; // Fallback CTA
+
   return (
     <>
       <article
@@ -11,7 +18,7 @@ export default function InfoCard({ imgSrc, headline, paragraph, cta }) {
         <div
           className="bg-cover bg-center h-48 mb-4 rounded-lg"
           style={{
-            backgroundImage: `url(${imgSrc})`,
+            backgroundImage: `url(${safeImgSrc})`,
             backgroundSize: "contain",
             backgroundColor: "rgba(255,255,255)",
             backgroundRepeat: "no-repeat",
@@ -21,18 +28,23 @@ export default function InfoCard({ imgSrc, headline, paragraph, cta }) {
         {/* Headline and Paragraph */}
         <div className="flex-grow">
           <h2 className="text-xl font-semibold text-gray-900 mb-2">
-            {headline}
+            {safeHeadline}
           </h2>
-          <p className="text-gray-700 mb-4">{paragraph}</p>
+          <p className="text-gray-700 mb-4">{safeParagraph}</p>
         </div>
 
         {/* Call to Action */}
         <div className="mt-auto">
-          <Link href={cta.href} className="cta-button">
-            {cta.text}
-          </Link>
+          {safeCta.href ? (
+            <Link href={safeCta.href}>
+              <a className="cta-button">{safeCta.text}</a>
+            </Link>
+          ) : (
+            <div className="cta-button disabled">No CTA Available</div>
+          )}
         </div>
       </article>
+
       <style jsx>{`
         .cta-button {
           background-color: #0070f3;
@@ -44,16 +56,22 @@ export default function InfoCard({ imgSrc, headline, paragraph, cta }) {
           transition: background-color 0.3s ease;
         }
 
+        .cta-button.disabled {
+          background-color: #e5e5e5;
+          color: #aaa;
+          cursor: not-allowed;
+        }
+
         .reverse-colors .cta-button {
           background-color: white;
           color: #0070f3;
         }
 
-        .cta-button:hover {
+        .cta-button:hover:not(.disabled) {
           background-color: #005bb5;
         }
 
-        .reverse-colors .cta-button:hover {
+        .reverse-colors .cta-button:hover:not(.disabled) {
           background-color: #e5e5e5;
         }
       `}</style>
