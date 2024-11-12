@@ -40,25 +40,25 @@ export default function CaseStudy({
           <p>{background}</p>
 
           <h4>Approach</h4>
-          <ul>
+          {/* <ul>
             {approach.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
-          </ul>
+          </ul> */}
 
           <h4>Results</h4>
-          <ul>
+          {/* <ul>
             {results.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
-          </ul>
+          </ul> */}
 
           <h4>Technologies/Tools</h4>
-          <ul>
+          {/* <ul>
             {technologies.map((tech, index) => (
               <li key={index}>{tech}</li>
             ))}
-          </ul>
+          </ul> */}
         </div>
       </article>
 
