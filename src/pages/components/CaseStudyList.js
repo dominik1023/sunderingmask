@@ -3,7 +3,8 @@ import CaseStudy from "./CaseStudy";
 export default function CaseStudyList({ caseStudies }) {
   return (
     <div>
-      {caseStudies.map((caseStudy, index) => (
+      sss
+      {/* {caseStudies.map((caseStudy, index) => (
         <CaseStudy
           key={index}
           title={caseStudy.title}
@@ -19,7 +20,7 @@ export default function CaseStudyList({ caseStudies }) {
           image={caseStudy.image}
           imageAlt={caseStudy.imageAlt}
         />
-      ))}
+      ))} */}
     </div>
   );
 }
