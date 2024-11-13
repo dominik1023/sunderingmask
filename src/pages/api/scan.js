@@ -1,37 +1,51 @@
-import puppeteer from "puppeteer";
-import { AxePuppeteer } from "axe-puppeteer";
+import axios from "axios";
+import { JSDOM } from "jsdom";
+import axe from "axe-core";
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
     const { url } = req.body;
 
+    // Check if URL is provided
     if (!url) {
       console.error("Error: Missing 'url' in the request body.");
       return res.status(400).json({ error: "Bad Request: 'url' is required." });
     }
 
     try {
-      console.log("Launching Puppeteer...");
-      const browser = await puppeteer.launch({
-        headless: true,
-        args: ["--no-sandbox", "--disable-setuid-sandbox"],
+      console.log("Fetching page content from:", url);
+
+      // Fetch the HTML content of the page
+      const response = await axios.get(url, {
+        headers: {
+          "User-Agent":
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+        },
       });
 
-      const page = await browser.newPage();
-      console.log(`Navigating to: ${url}`);
-      await page.goto(url, { waitUntil: "networkidle2" });
+      const html = response.data;
+      console.log("Page content fetched successfully.");
+
+      console.log("Setting up JSDOM...");
+      const dom = new JSDOM(html, { url });
+      const { window } = dom;
+
+      console.log("Injecting axe-core...");
+      // Attach axe-core to the JSDOM window
+      window.axe = axe;
 
       console.log("Running axe-core analysis...");
-      const results = await new AxePuppeteer(page).analyze();
-
-      console.log("Closing browser...");
-      await browser.close();
+      // Run the accessibility scan
+      const results = await window.axe.run(window.document);
 
       console.log("Scan completed successfully.");
-      res.status(200).json(results);
+      res.status(200).json(results); // Return the scan results
     } catch (error) {
-      console.error("Error during scan:", error);
-      res.status(500).json({ error: error.message || "Internal Server Error" });
+      console.error("Error during scan:", error.message);
+      console.error("Stack Trace:", error.stack);
+      res
+        .status(500)
+        .json({ error: error.message || "Failed to perform scan" });
     }
   } else {
     console.error("Invalid HTTP method:", req.method);
