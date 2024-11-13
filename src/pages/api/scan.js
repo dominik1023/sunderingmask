@@ -17,21 +17,12 @@ export default async function handler(req, res) {
   if (req.method === "POST") {
     const { url } = req.body;
 
+    if (!url) {
+      console.error("Missing 'url' in the request body.");
+      return res.status(400).json({ error: "Bad Request: 'url' is required." });
+    }
+
     try {
-      // const ip = req.headers["x-forwarded-for"] || req.connection.remoteAddress;
-
-      // if (scan24Lockdown && redis) {
-      //   const lastScanTime = await redis.get(ip);
-      //   const now = Date.now();
-      //   const oneDay = 24 * 60 * 60 * 1000;
-
-      //   if (lastScanTime && now - lastScanTime < oneDay) {
-      //     return res
-      //       .status(429)
-      //       .json({ message: "You can only scan once every 24 hours." });
-      //   }
-      // }
-
       console.log("Received URL:", url);
 
       let browser;
@@ -130,11 +121,10 @@ export default async function handler(req, res) {
 
       // if (redis) await redis.quit();
 
-      res
-        .status(500)
-        .json({ error: error.message || "Error scanning the URL" });
+      res.status(500).json({ error: error.message || "Internal Server Error" });
     }
   } else {
-    res.status(405).json({ message: "Method not allowed" });
+    console.error("Invalid HTTP method:", req.method);
+    res.status(405).json({ error: "Method Not Allowed" });
   }
 }
