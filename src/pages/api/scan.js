@@ -21,24 +21,50 @@ export default async function handler(req, res) {
 
       const html = response.data;
       console.log("Page content fetched successfully.");
+      console.log(`HTML length: ${html.length} characters`);
 
       console.log("Setting up JSDOM...");
-      const dom = new JSDOM(html, { url });
+      const dom = new JSDOM(html, {
+        url,
+        contentType: "text/html",
+        pretendToBeVisual: true,
+        runScripts: "dangerously", // Allow all scripts to run
+        resources: "usable", // Allow external resources to be loaded
+      });
+
       const { window } = dom;
 
-      console.log("Injecting axe-core...");
-      // Attach axe-core to the JSDOM window
-      window.axe = axe;
-
-      console.log("Axe-core successfully injected.");
-      res.status(200).json({
-        success: true,
-        title: window.document.title,
-        axeInjected: true,
+      console.log("Waiting for the page to load...");
+      // Wait for the window's load event to ensure all scripts and resources are loaded
+      await new Promise((resolve, reject) => {
+        window.addEventListener("load", resolve);
+        setTimeout(
+          () => reject(new Error("Timeout waiting for page load")),
+          10000
+        ); // 10-second timeout
       });
+
+      console.log("Injecting and executing axe-core...");
+      // Execute the axe-core source code in the window context
+      window.eval(axe.source);
+
+      console.log("Configuring axe-core...");
+      window.axe.configure({
+        reporter: "v2",
+        // Add other configurations here if needed
+      });
+
+      console.log("Running axe-core analysis...");
+      const results = await window.axe.run();
+
+      console.log("Scan completed successfully.");
+      res.status(200).json(results); // Return scan results
     } catch (error) {
-      console.error("Error during processing:", error.message);
-      res.status(500).json({ error: error.message });
+      console.error("Error during scan:", error.message);
+      console.error("Stack Trace:", error.stack);
+      res
+        .status(500)
+        .json({ error: error.message || "Failed to perform scan" });
     }
   } else {
     res.status(405).json({ error: "Method Not Allowed" });
