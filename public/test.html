@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Accessibility Scanner</title>
+  </head>
+  <body>
+    <h1>Accessibility Scanner Test</h1>
+    <form id="scannerForm">
+      <label for="url">Enter a URL to scan:</label>
+      <input type="url" id="url" placeholder="https://example.com" required />
+      <button type="submit">Scan</button>
+    </form>
+    <h2>Results:</h2>
+    <pre id="results"></pre>
+
+    <script>
+      document
+        .getElementById("scannerForm")
+        .addEventListener("submit", async (event) => {
+          event.preventDefault();
+          const url = document.getElementById("url").value;
+          const resultsElement = document.getElementById("results");
+
+          resultsElement.textContent = "Scanning...";
+
+          try {
+            const response = await fetch("/api/scan", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({ url }),
+            });
+
+            if (!response.ok) {
+              throw new Error(
+                `Error: ${response.status} ${response.statusText}`
+              );
+            }
+
+            const results = await response.json();
+            resultsElement.textContent = JSON.stringify(results, null, 2);
+          } catch (error) {
+            resultsElement.textContent = `Failed to scan: ${error.message}`;
+          }
+        });
+    </script>
+  </body>
+</html>
