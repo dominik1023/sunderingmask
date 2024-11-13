@@ -32,7 +32,6 @@ export default async function handler(req, res) {
       //   }
       // }
 
-      // Debugging and logging to track execution
       console.log("Received URL:", url);
 
       let browser;
