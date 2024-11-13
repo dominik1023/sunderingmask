@@ -37,7 +37,9 @@ export default function InfoCard({ imgSrc, headline, paragraph, cta }) {
         <div className="mt-auto">
           {safeCta.href ? (
             <Link href={safeCta.href}>
-              <a className="cta-button">{safeCta.text}</a>
+              {/* <a className="cta-button"> */}
+              {safeCta.text}
+              {/* </a> */}
             </Link>
           ) : (
             <div className="cta-button disabled">No CTA Available</div>

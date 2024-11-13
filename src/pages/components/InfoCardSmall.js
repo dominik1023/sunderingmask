@@ -39,7 +39,9 @@ export default function InfoCardSmall({
           <p className="paragraph">{safeParagraph}</p>
           {safeCtaLink ? (
             <Link href={safeCtaLink}>
-              <a className="cta-button">{safeCtaText}</a>
+              {/* <a className="cta-button"> */}
+              {safeCtaText}
+              {/* </a> */}
             </Link>
           ) : (
             <div className="cta-button disabled">No CTA Available</div>
