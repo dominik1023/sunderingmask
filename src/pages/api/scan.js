@@ -1,5 +1,6 @@
 import axios from "axios";
 import { JSDOM } from "jsdom";
+import axe from "axe-core";
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
@@ -23,10 +24,18 @@ export default async function handler(req, res) {
 
       console.log("Setting up JSDOM...");
       const dom = new JSDOM(html, { url });
-      const { document } = dom.window;
+      const { window } = dom;
 
-      console.log("JSDOM successfully set up.");
-      res.status(200).json({ success: true, title: document.title });
+      console.log("Injecting axe-core...");
+      // Attach axe-core to the JSDOM window
+      window.axe = axe;
+
+      console.log("Axe-core successfully injected.");
+      res.status(200).json({
+        success: true,
+        title: window.document.title,
+        axeInjected: true,
+      });
     } catch (error) {
       console.error("Error during processing:", error.message);
       res.status(500).json({ error: error.message });
