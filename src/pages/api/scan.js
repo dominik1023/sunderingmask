@@ -32,33 +32,68 @@ export default async function handler(req, res) {
       //   }
       // }
 
-      const browser = await puppeteer.launch(
-        process.env.VERCEL_ENV === "production"
-          ? {
-              args: chromium.args,
-              executablePath: await chromium.executablePath,
-              headless: chromium.headless,
-              defaultViewport: chromium.defaultViewport,
-            }
-          : {
-              headless: true,
-              args: ["--no-sandbox", "--disable-setuid-sandbox"],
-            }
-      );
+      // Debugging and logging to track execution
+      console.log("Received URL:", url);
+
+      let browser;
+      try {
+        console.log("Launching Puppeteer...");
+        browser = await puppeteer.launch(
+          process.env.VERCEL_ENV === "production"
+            ? {
+                args: chromium.args,
+                executablePath: await chromium.executablePath,
+                headless: chromium.headless,
+                defaultViewport: chromium.defaultViewport,
+              }
+            : {
+                headless: true,
+                args: ["--no-sandbox", "--disable-setuid-sandbox"],
+              }
+        );
+        console.log("Puppeteer launched successfully.");
+      } catch (launchError) {
+        console.error("Puppeteer launch error:", launchError);
+        throw new Error("Failed to launch Puppeteer");
+      }
 
       const page = await browser.newPage();
-      await page.goto(url, { waitUntil: "networkidle2" });
 
-      const h1Text = await page.evaluate(() => {
-        const h1 = document.querySelector("h1");
-        return h1 ? h1.innerText : null;
-      });
+      try {
+        console.log("Navigating to URL:", url);
+        await page.goto(url, { waitUntil: "networkidle2" });
+        console.log("Page loaded successfully.");
+      } catch (navigationError) {
+        console.error("Navigation error:", navigationError);
+        throw new Error("Failed to load the provided URL");
+      }
 
-      const pageTitle = h1Text || (await page.title());
+      let pageTitle;
+      try {
+        console.log("Extracting page title or h1...");
+        const h1Text = await page.evaluate(() => {
+          const h1 = document.querySelector("h1");
+          return h1 ? h1.innerText : null;
+        });
+        pageTitle = h1Text || (await page.title());
+        console.log("Page title extracted:", pageTitle);
+      } catch (titleError) {
+        console.error("Error extracting page title or h1:", titleError);
+        throw new Error("Failed to extract page details");
+      }
 
-      const results = await new AxePuppeteer(page).analyze();
+      let results;
+      try {
+        console.log("Running axe-core analysis...");
+        results = await new AxePuppeteer(page).analyze();
+        console.log("Accessibility scan completed.");
+      } catch (axeError) {
+        console.error("Axe-core analysis error:", axeError);
+        throw new Error("Failed to perform accessibility scan");
+      }
 
       await browser.close();
+      console.log("Puppeteer closed successfully.");
 
       // if (scan24Lockdown && redis) {
       //   await redis.set(ip, Date.now(), "EX", 86400);
@@ -75,7 +110,9 @@ export default async function handler(req, res) {
 
       // if (redis) await redis.quit();
 
-      res.status(500).json({ error: "Error scanning the URL" });
+      res
+        .status(500)
+        .json({ error: error.message || "Error scanning the URL" });
     }
   } else {
     res.status(405).json({ message: "Method not allowed" });
