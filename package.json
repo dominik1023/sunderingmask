@@ -17,8 +17,7 @@
     "chrome-aws-lambda": "^10.1.0",
     "ioredis": "^5.4.1",
     "next": "14.2.14",
-    "puppeteer": "^23.5.3",
-    "puppeteer-core": "^23.7.1",
+    "puppeteer-core": "^10.4.0",
     "react": "^18",
     "react-dom": "^18",
     "react-responsive": "^10.0.0"
