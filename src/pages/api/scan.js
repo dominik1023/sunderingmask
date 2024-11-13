@@ -59,6 +59,27 @@ export default async function handler(req, res) {
 
       const page = await browser.newPage();
 
+      // Block chrome-extension:// requests to avoid resource loading issues
+      try {
+        console.log("Setting up request interception...");
+        await page.setRequestInterception(true);
+        page.on("request", (request) => {
+          if (request.url().startsWith("chrome-extension://")) {
+            console.log("Blocked resource:", request.url());
+            request.abort(); // Block requests to chrome-extension:// URLs
+          } else {
+            request.continue(); // Allow other requests
+          }
+        });
+        console.log("Request interception set up successfully.");
+      } catch (interceptionError) {
+        console.error(
+          "Error setting up request interception:",
+          interceptionError
+        );
+        throw new Error("Failed to set up request interception");
+      }
+
       try {
         console.log("Navigating to URL:", url);
         await page.goto(url, { waitUntil: "networkidle2" });
