@@ -22,7 +22,7 @@ export default function CelticSalt() {
         }
       >
         <h2 className="text-3xl font-bold">
-          The Role of Water in Sourdough Baking
+          All-Organic, no compromises, ever
         </h2>
         <p>
           The aroma of freshly baked sourdough. The satisfying crackle of a
