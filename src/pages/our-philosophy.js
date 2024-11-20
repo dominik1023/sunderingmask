@@ -17,89 +17,157 @@ export default function CelticSalt() {
         process. Elevate your sourdough with the right water choice."
       />
       <LayoutInterior
-        pageTitle={"The Importance of Using Filtered Water in Sourdough Baking"}
+        pageTitle={
+          "Our Philosophy: The Art and Science of Organic Sourdough Baking"
+        }
       >
         <h2 className="text-3xl font-bold">
           The Role of Water in Sourdough Baking
         </h2>
         <p>
-          Filtered water is more than just a liquid to hydrate your dough; it's
-          a key player in the fermentation process. The quality of water can
-          affect the activity of your starter, the dough's texture, and the
-          final flavor of your bread.
-        </p>
-        <h2>How Chlorine and Impurities Affect Sourdough Fermentation</h2>
-        <p>
-          Unfiltered tap water can contain chlorine, fluoride, and other
-          chemicals that may inhibit the growth of beneficial yeast and bacteria
-          in your sourdough starter. These microorganisms are essential for the
-          fermentation that gives sourdough its distinctive tangy flavor and
-          airy texture. Filtered water ensures a cleaner environment for these
-          microbes, promoting a healthier and more active starter.
-        </p>
-        <h2>Benefits of Using Filtered Water in Sourdough</h2>
-        <ol>
-          <li>
-            <strong>Enhanced Flavor</strong>
-            <br />
-            Filtered water helps maintain the natural flavors of your
-            ingredients. By removing impurities, you allow the subtle notes of
-            your flour and starter to shine.
-          </li>
-          <li>
-            <strong>Improved Fermentation</strong>
-            <br />
-            The absence of chlorine and other contaminants ensures that your
-            starter remains active and vibrant, resulting in better
-            fermentation. This leads to a consistent rise and an airy crumb.
-          </li>
-          <li>
-            <strong>Consistent Dough Texture</strong>
-            <br />
-            Filtered water provides consistency. Each bake will have predictable
-            hydration levels, making it easier to achieve the perfect dough
-            texture every time.
-          </li>
-        </ol>
-        <h2>How to Choose the Best Filtered Water for Sourdough</h2>
-        <p>Not all filtered water is the same. Here&amp;s what to look for:</p>
-        <ul>
-          <li>
-            <strong>No Chlorine or Chloramine:</strong> Use water filters that
-            specifically remove these chemicals.
-          </li>
-          <li>
-            <strong>Balanced pH:</strong> Aim for neutral or slightly acidic
-            water. Extreme pH levels can affect the starter's activity.
-          </li>
-          <li>
-            <strong>Low Mineral Content:</strong> While some minerals can be
-            beneficial, too much can alter the dough's texture.
-          </li>
-        </ul>
-        <h2>FAQs About Using Filtered Water in Sourdough</h2>
-        <p>
-          <strong>Can I use bottled water instead of filtered water?</strong>
+          The aroma of freshly baked sourdough. The satisfying crackle of a
+          golden crust. The warmth of a slice, fresh from the oven. These
+          sensory experiences go beyond taste—they evoke memories, emotions, and
+          connections. <br />
+          Our bread isn&apos;t just food—it&apos;s an experience. By using pure,
+          organic ingredients and time-honored methods, we tap into the
+          universal longing for authenticity, simplicity, and comfort. Every
+          loaf is a promise of care, quality, and tradition.
         </p>
         <p>
-          No, water from plastic bottles contains micro-plastics. Water from
-          glass bottles, or any other kind of water that has been purchased is
-          of unknown origin. The best water comes from an osmosis filter.
+          At our core, we believe that food is more than sustenance—it is an
+          expression of connection, culture, and care. Sourdough bread, with its
+          ancient roots and timeless appeal, represents everything that is right
+          about slowing down and doing things the way they should be done. Our
+          organic approach to sourdough baking is a testament to this
+          philosophy, blending tradition with innovation to create bread that is
+          as nourishing as it is delicious.
         </p>
         <p>
-          <strong>Does hard water affect sourdough baking?</strong>
+          In a world dominated by mass production and convenience, we take a
+          stand for quality, health, and sustainability. Every loaf we bake is a
+          labor of love, made with ingredients that honor the environment and
+          respect the health of those who enjoy it.
+        </p>
+        <h2>Why Organic Baking is Superior</h2>
+        <p>
+          Organic baking is not just a label—it’s a promise. It’s a commitment
+          to using ingredients free from synthetic pesticides, fertilizers, and
+          chemicals. It’s about crafting bread that is wholesome, natural, and
+          as close to its original form as possible. But beyond the absence of
+          harmful additives, organic baking elevates every element of
+          bread-making: taste, texture, nutrition, and sustainability.
         </p>
         <p>
-          Hard water can alter the dough's texture and slow down fermentation.
-          Using filtered water helps maintain consistency and ensures an active
-          starter.
+          Where mass-produced bread relies on artificial preservatives, bleached
+          flours, and industrial shortcuts, our organic sourdough embraces
+          time-honored methods. The result is bread that is alive with flavor,
+          brimming with nutrients, and crafted with intention.
         </p>
-        <h2>Conclusion: Elevate Your Sourdough with Filtered Water</h2>
+        <h2>The Ingredients That Define Us</h2>
+        <h3>Organic Flour: The Soul of the Bread</h3>
         <p>
-          Using filtered water in your sourdough baking ensures that your
-          starter thrives, your dough ferments perfectly, and your bread has a
-          consistent flavor and texture. Make this simple change to elevate your
-          baking results.
+          Our sourdough starts with organic flour, the foundation of every great
+          loaf. Unlike conventional flour, which is stripped of its nutrients
+          and treated with chemicals, organic flour retains its natural
+          vitamins, minerals, and fibers. The result? Bread that is rich in
+          flavor, packed with nutrition, and easier to digest. We source our
+          flour from sustainable farms that respect the land, ensuring every
+          kernel tells a story of care and stewardship.
+        </p>
+        <h3>Celtic Salt: A Touch of the Ocean</h3>
+        <p>
+          We enhance our dough with Celtic salt, an unrefined, mineral-rich salt
+          that elevates the flavor profile of our bread. Unlike processed table
+          salt, Celtic salt retains its natural moisture and over 80 trace
+          minerals, supporting both flavor and health. Its addition ensures
+          every bite is a balance of taste and texture.
+        </p>
+        <h3>Naturally Cultured Starter: The Heartbeat of Sourdough</h3>
+        <p>
+          Our sourdough starter, nurtured with organic flour and filtered water,
+          is the living essence of our bread. This carefully maintained culture
+          of wild yeasts and bacteria is the secret to sourdough’s signature
+          tang, airy crumb, and gut-friendly benefits. Fermented slowly over
+          hours, our bread is a living testament to the power of patience.
+        </p>
+        <h2>Health Benefits of Organic Sourdough Bread</h2>
+        <h3>Nutrient Density</h3>
+        <p>
+          Organic baking preserves the integrity of ingredients. Organic flour
+          retains essential nutrients like B vitamins, magnesium, and
+          zinc—nutrients that are stripped from conventional flours during
+          processing. Paired with Celtic salt, which provides trace minerals
+          like magnesium and potassium, our bread offers a wholesome nutritional
+          profile unmatched by industrial loaves.
+        </p>
+        <h3>Digestive Wellness</h3>
+        <p>
+          Mass-produced bread is made with fast-rising yeast and chemical
+          stabilizers, leading to bread that is often hard to digest. By
+          contrast, the long fermentation process of sourdough pre-digests
+          starches and gluten, breaking them into simpler compounds that are
+          gentler on the digestive system. This makes our bread an excellent
+          option for those with gluten sensitivity (though not celiac disease).
+        </p>
+        <h3>Blood Sugar Control</h3>
+        <p>
+          Sourdough bread has a lower glycemic index than conventional bread,
+          meaning it releases energy slowly without spiking blood sugar. The
+          fermentation process reduces phytic acid, which can inhibit mineral
+          absorption, making our bread not just better for energy but also more
+          bioavailable nutritionally.
+        </p>
+        <h3>Free from Harmful Chemicals</h3>
+        <p>
+          By avoiding synthetic pesticides, herbicides, and chemical additives,
+          our organic bread ensures you’re not ingesting harmful residues. Every
+          bite is as clean and natural as the land it came from.
+        </p>
+        <h2>The Problem with Mass-Produced Bread</h2>
+        <p>
+          Mass-produced bread prioritizes speed, uniformity, and profit over
+          flavor, nutrition, and integrity. Bleached, enriched flours are
+          stripped of their nutrients, then fortified artificially. Chemical
+          preservatives extend shelf life but compromise the bread’s freshness
+          and healthfulness. Artificial flavorings and stabilizers mask the
+          shortcuts taken in its production.
+        </p>
+        <p>The result? Bread that lacks soul, flavor, and nourishment.</p>
+        <p>
+          In stark contrast, our bread is slow-crafted, using organic
+          ingredients and traditional methods. We take the time to ferment, to
+          mix, to bake with care—because we know that great bread cannot be
+          rushed.
+        </p>
+        <h2>Sustainability: Baking for a Better Future</h2>
+        <p>
+          Organic farming practices prioritize soil health, biodiversity, and
+          water conservation. By choosing organic ingredients, we’re supporting
+          a system of agriculture that works with nature, not against it. Our
+          use of organic flour and Celtic salt reflects our commitment to
+          sustainability, ensuring that every loaf we bake leaves a lighter
+          footprint on the planet.
+        </p>
+        <p>
+          From sourcing ingredients to packaging our bread, we strive to make
+          choices that protect the earth for future generations.
+        </p>
+        <h2>Our Commitment</h2>
+        <p>
+          When you choose our bread, you’re choosing more than organic—you’re
+          choosing a way of life. A life that values health over haste, quality
+          over convenience, and care over cost-cutting.
+        </p>
+        <p>
+          With every loaf, we honor the traditions of the past, respect the
+          needs of the present, and invest in the future of our planet.
+        </p>
+        <p>
+          <strong>
+            This is our philosophy. Organic sourdough, baked with integrity and
+            shared with love.
+          </strong>
         </p>
       </LayoutInterior>
     </>
