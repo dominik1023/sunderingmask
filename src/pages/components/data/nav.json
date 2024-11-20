@@ -5,35 +5,27 @@
       "path": "/"
     },
     {
-      "name": "Get Compliant",
+      "name": "Our Philosophy",
       "path": "/accessibility-services"
     },
     {
-      "name": "About Us",
+      "name": "Organic Ingredients",
       "dropdown": [
         {
           "name": "About Us",
           "path": "/about-us"
         },
         {
-          "name": "About Accessibility",
-          "path": "/about-accessibility"
+          "name": "Celtic Salt",
+          "path": "/ingredients-celtic-salt"
         },
         {
-          "name": "Accessibility Violations",
-          "path": "/accessibility-violations"
+          "name": "Organic Flour",
+          "path": "/ingredients-organic-flour"
         },
         {
-          "name": "FAQ",
-          "path": "/faq"
-        },
-        {
-          "name": "Accessibility Lawsuits",
-          "path": "/accessibility-lawsuits"
-        },
-        {
-          "name": "Case Studies",
-          "path": "/case-studies"
+          "name": "Filtered Water",
+          "path": "/ingredients-filtered-water"
         }
       ]
     },
