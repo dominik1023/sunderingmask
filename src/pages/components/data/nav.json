@@ -6,15 +6,11 @@
     },
     {
       "name": "Our Philosophy",
-      "path": "/accessibility-services"
+      "path": "/our-philosophy"
     },
     {
       "name": "Organic Ingredients",
       "dropdown": [
-        {
-          "name": "About Us",
-          "path": "/about-us"
-        },
         {
           "name": "Celtic Salt",
           "path": "/ingredients-celtic-salt"
@@ -28,6 +24,14 @@
           "path": "/ingredients-filtered-water"
         }
       ]
+    },
+    {
+      "name": "FAQ",
+      "path": "/faq"
+    },
+    {
+      "name": "Gallery",
+      "path": "/gallery"
     },
     {
       "name": "Contact Us",
