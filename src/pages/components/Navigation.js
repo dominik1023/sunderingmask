@@ -57,9 +57,7 @@ export default function Navigation() {
             <span></span>
           </button>
           <Link href="/">
-            <p className="logo">
-              Accessibility <span>Developers</span> of Houston, LLC.
-            </p>
+            <p className="logo">White House Bakery of Baytown</p>
           </Link>
         </div>
 

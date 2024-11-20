@@ -5,34 +5,6 @@ import SEO from "./components/SEO";
 import Link from "next/link";
 
 export default function FAQ() {
-  const parseLinks = (text) => {
-    const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g; // Regex to match [text](url)
-    const parts = [];
-    let lastIndex = 0;
-    let match;
-
-    // Find all links and split the text
-    while ((match = linkRegex.exec(text)) !== null) {
-      // Push the text before the link
-      if (match.index > lastIndex) {
-        parts.push(text.slice(lastIndex, match.index));
-      }
-      // Push the link as a React component without <a> tag
-      parts.push(
-        <Link key={match.index} href={match[2]}>
-          {match[1]}
-        </Link>
-      );
-      lastIndex = linkRegex.lastIndex;
-    }
-
-    // Push remaining text after the last link
-    if (lastIndex < text.length) {
-      parts.push(text.slice(lastIndex));
-    }
-
-    return parts;
-  };
   return (
     <>
       <SEO
@@ -53,14 +25,6 @@ export default function FAQ() {
             directly through our <Link href="/contact-us">Contact Us</Link>.
             We&apos;re here to help!
           </p>
-          {/* <ul className="faq-list">
-            {faqData.faqa.map((faq, index) => (
-              <li key={index} className="faq-item">
-                <h3>{faq.question}</h3>
-                <p>{parseLinks(faq.answer)}</p>
-              </li>
-            ))}
-          </ul> */}
         </main>
       </LayoutInterior>
     </>

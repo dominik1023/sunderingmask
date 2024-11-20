@@ -27,40 +27,27 @@ export default function Home() {
             </h1>
             <div className="text-left">
               {/* <h2>scan and remediate with us! Why trust us? Read below!</h2> */}
-              <div
-                className={`infocard-wrapper ${
-                  isMobile ? "flex-col" : "flex-row"
-                }`}
-              >
-                <div className="infocard-wrapper">
-                  <InfoCardSmall
-                    imageSrc="/images/find-glass-magnifier-search-seo-svgrepo-com.svg"
-                    headline="We Scan Your Site"
-                    paragraph="Comprehensive, non-intrusive website scan to identify all existing ADA compliance issues."
-                    ctaText="Learn More"
-                    ctaLink="/accessibility-services"
-                    showArrow={true}
-                    // svgArrow={<RightArrow />}
-                  />
-                  <InfoCardSmall
-                    imageSrc="/images/delete-remove-uncheck-svgrepo-com.svg"
-                    headline="You Get Your Report"
-                    paragraph="Clear, actionable reports highlighting compliance issues and prioritized solutions."
-                    ctaText="See Sample Report"
-                    ctaLink="/accessibility-violations"
-                    showArrow={true}
-                    // svgArrow={<RightArrow />}
-                  />
-                  <InfoCardSmall
-                    imageSrc="/images/check-mark-button-svgrepo-com.svg"
-                    headline="We Remediate Violations"
-                    paragraph="Personalized remediation to meet WCAG 2.1 standards, ensuring lasting compliance."
-                    ctaText="Secure Your Website"
-                    ctaLink="/contact-us"
-                  />
-                </div>
-              </div>
               <h2>You don&apos;t have to stress over ADA compliance</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+                <InfoCard
+                  imgSrc="/images/usability.png"
+                  headline="Organic Flour"
+                  paragraph="Give all users, including those with disabilities, a seamless browsing experience. By improving accessibility, you'll make your site easier to navigate, creating a better experience that keeps visitors engaged and loyal. The result? More satisfied users and higher conversion rates."
+                  cta={{ href: "/services", text: "Learn More" }}
+                />
+                <InfoCard
+                  imgSrc="/images/law.png"
+                  headline="Celtic Salt"
+                  paragraph="Protect your business by avoiding costly lawsuits with our ADA compliance services. We ensure your website meets WCAG 2.1 guidelines, helping you avoid legal risks and costly fines. You can focus on growing your business, knowing that your compliance is covered."
+                  cta={{ href: "/legal-compliance", text: "Ensure Compliance" }}
+                />
+                <InfoCard
+                  imgSrc="/images/edge.png"
+                  headline="Filtered Water"
+                  paragraph="Set yourself apart from competitors by making your site accessible to everyone. A compliant website not only increases your reach but also positions you as an inclusive brand. Let accessibility be your secret to winning more customers and standing out in your industry."
+                  cta={{ href: "/contact-us", text: "Get Started" }}
+                />
+              </div>
               <p>
                 With our <strong>personalized solutions</strong>, you&apos;ll
                 quickly meet <strong>WCAG 2.1</strong>
@@ -101,26 +88,7 @@ export default function Home() {
             <br />
             <br />
             <h2>The benefits of having an accessible website are clear:</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
-              <InfoCard
-                imgSrc="/images/usability.png"
-                headline="Enhance Your Website's Usability"
-                paragraph="Give all users, including those with disabilities, a seamless browsing experience. By improving accessibility, you'll make your site easier to navigate, creating a better experience that keeps visitors engaged and loyal. The result? More satisfied users and higher conversion rates."
-                cta={{ href: "/services", text: "Learn More" }}
-              />
-              <InfoCard
-                imgSrc="/images/law.png"
-                headline="Stay Safe from Lawsuits"
-                paragraph="Protect your business by avoiding costly lawsuits with our ADA compliance services. We ensure your website meets WCAG 2.1 guidelines, helping you avoid legal risks and costly fines. You can focus on growing your business, knowing that your compliance is covered."
-                cta={{ href: "/legal-compliance", text: "Ensure Compliance" }}
-              />
-              <InfoCard
-                imgSrc="/images/edge.png"
-                headline="Gain a Competitive Edge"
-                paragraph="Set yourself apart from competitors by making your site accessible to everyone. A compliant website not only increases your reach but also positions you as an inclusive brand. Let accessibility be your secret to winning more customers and standing out in your industry."
-                cta={{ href: "/contact-us", text: "Get Started" }}
-              />
-            </div>
+
             <br />
             <br />
 

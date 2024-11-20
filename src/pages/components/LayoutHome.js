@@ -4,7 +4,6 @@ import Footer from "./Footer";
 import HeaderNav from "./HeaderNav";
 import ContentWrapperHome from "./ContentWrapperHome"; //
 import HeroContent from "./HeroContent";
-import AccessibilityScanner from "./AccessibilityScanner";
 
 export default function LayoutHome({ children }) {
   return (
@@ -13,16 +12,13 @@ export default function LayoutHome({ children }) {
         <div className="hero-container">
           <HeaderNav />
           <HeroContent
-            title="Compliance. Confidence. Anonymity."
-            paragraph="Rest assured in a well-executed accessibility compliance program."
+            title="Sourdough Bread, from the Homestead"
+            paragraph="Three ingredients - organic flour, clean water, and the best salt on Earth"
           />
         </div>
       </header>
       <section>
-        <ContentWrapperHome>
-          <AccessibilityScanner />
-          {children}
-        </ContentWrapperHome>
+        <ContentWrapperHome>{children}</ContentWrapperHome>
       </section>
       <Footer />
 
