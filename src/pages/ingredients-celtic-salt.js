@@ -1,4 +1,6 @@
 import LayoutInterior from "./components/LayoutInterior";
+import Image from "next/image";
+
 import SEO from "./components/SEO";
 export default function CelticSalt() {
   return (
@@ -15,6 +17,16 @@ export default function CelticSalt() {
           The Natural Edge of Celtic Salt in Sourdough Baking
         </h2>
         <p>
+        <Image
+        src="/images/salt.png"
+        alt="Celtic sald"
+        width={400}
+        height={400}
+        style={{
+          float: 'right',
+          margin: '0 0 24px 24px'
+        }}
+      />
           Celtic salt, harvested from pristine coastal regions, is a cornerstone
           ingredient for creating organic sourdough bread. Unlike refined table
           salt, Celtic salt retains its trace minerals and natural moisture,
