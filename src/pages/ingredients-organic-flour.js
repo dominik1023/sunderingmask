@@ -4,13 +4,13 @@ import LayoutInterior from "./components/LayoutInterior";
 import SEO from "./components/SEO";
 // import CaseStudyList from "./components/CaseStudyList";
 // import caseStudyData from "./components/data/caseStudies.json";
-export default function CelticSalt() {
+export default function OrganicFlour() {
   return (
     <>
       <SEO
-        title="Why Celtic Salt and Organic Flour Are Essential for Perfect Organic Sourdough Bread"
-        description="Learn how Celtic salt and organic flour enhance the flavor, texture, and nutritional value of organic sourdough bread. Discover tips for baking the ultimate artisan loaf."
-        keywords="Celtic salt, organic flour, sourdough bread, organic baking, natural ingredients, artisan bread tips, bread baking essentials, healthy sourdough recipes, organic bread, Celtic sea salt benefits."
+        title="Why Organic Flour is Essential for Perfect Organic Sourdough Bread"
+        description="Discover the benefits of using organic flour in sourdough bread. Learn how it enhances flavor, texture, and nutrition for the ultimate organic baking experience."
+        keywords="Organic flour, sourdough bread, organic baking, natural ingredients, artisan bread tips, bread baking essentials, healthy sourdough recipes, organic bread, best flour for sourdough."
       />
       <LayoutInterior
         pageTitle={"Why Organic Flour is Essential for Organic Sourdough Bread"}
