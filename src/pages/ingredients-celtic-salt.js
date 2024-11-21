@@ -18,15 +18,15 @@ export default function CelticSalt() {
         </h2>
         <p>
         <Image
-        src="/images/salt.png"
-        alt="Celtic sald"
-        width={400}
-        height={400}
-        style={{
-          float: 'right',
-          margin: '0 0 24px 24px'
-        }}
-      />
+          src="/images/salt.png"
+          alt="Celtic sald"
+          width={400}
+          height={400}
+          style={{
+            float: 'right',
+            margin: '0 0 24px 24px'
+          }}
+        />
           Celtic salt, harvested from pristine coastal regions, is a cornerstone
           ingredient for creating organic sourdough bread. Unlike refined table
           salt, Celtic salt retains its trace minerals and natural moisture,

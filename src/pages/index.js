@@ -23,27 +23,43 @@ export default function Home() {
         <main className="flex flex-col items-center sm:items-start">
           <div className="container max-w-screen-xl mx-auto px-4 hero-content text-center">
             <h1 className="text-4xl font-bold text-center text-gray-900 mt-8">
-              Your Trusted Partner in Accessibility Compliance
+            Sourdough Baking - The True Taste of Tradition
             </h1>
+            <p>Crafted with care, our organic sourdough bread brings together time-honored methods and the finest natural ingredients. Taste the difference that Celtic salt, filtered water, and organic flour make in every bite.
+            </p>
+
             <div className="text-left">
-              <h2>You don&apos;t have to stress over ADA compliance</h2>
+              <h2>Why Choose Our Organic Sourdough Bread</h2>
+              <h3>Bread Made with Integrity</h3>
+              <ul>
+                <li><strong>Organic Ingredients:</strong> Free from harmful additives and chemicals.</li>
+                <li><strong>Timeless Methods:</strong> Slow fermentation for superior flavor and nutrition.</li>
+                <li><strong>Sustainably Crafted:</strong> Supporting the planet with every loaf.</li>
+              </ul>
+              
+              
+              
+              
+
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
                 <InfoCard
                   imgSrc="/images/usability.png"
                   headline="Organic Flour"
-                  paragraph="Give all users, including those with disabilities, a seamless browsing experience. By improving accessibility, you'll make your site easier to navigate, creating a better experience that keeps visitors engaged and loyal. The result? More satisfied users and higher conversion rates."
+                  paragraph="The Soul of Every Loaf - 
+                  We source our organic flour from trusted farms that value sustainability and quality. By avoiding pesticides and chemical treatments, organic flour retains its natural nutrients and flavor, making it the perfect foundation for our sourdough. Each bite is a celebration of purity and care."
                   cta={{ href: "/services", text: "Learn More" }}
                 />
                 <InfoCard
-                  imgSrc="/images/law.png"
+                  imgSrc="/images/salt.png"
                   headline="Celtic Salt"
-                  paragraph="Protect your business by avoiding costly lawsuits with our ADA compliance services. We ensure your website meets WCAG 2.1 guidelines, helping you avoid legal risks and costly fines. You can focus on growing your business, knowing that your compliance is covered."
+                  paragraph="Where Flavor Meets Nutrition - Celtic salt is unrefined, mineral-rich, and sustainably harvested from pristine coastal waters. Unlike processed salts, it retains over 80 essential minerals that enhance the flavor and nutritional profile of our bread. Every sprinkle brings a natural complexity to the taste you won’t find in mass-produced bread."
                   cta={{ href: "/legal-compliance", text: "Ensure Compliance" }}
                 />
                 <InfoCard
                   imgSrc="/images/edge.png"
                   headline="Filtered Water"
-                  paragraph="Set yourself apart from competitors by making your site accessible to everyone. A compliant website not only increases your reach but also positions you as an inclusive brand. Let accessibility be your secret to winning more customers and standing out in your industry."
+                  paragraph="Purity in Every Drop - 
+                  Water is the lifeblood of sourdough, and we use only the purest filtered water in our dough. Free from impurities and chemicals, our water ensures that the fermentation process is clean and natural, producing a better-tasting and healthier loaf."
                   cta={{ href: "/contact-us", text: "Get Started" }}
                 />
               </div>
