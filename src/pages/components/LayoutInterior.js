@@ -23,7 +23,7 @@ export default function LayoutInterior({ children, pageTitle }) {
       <style jsx>{`
         .hero-container {
           height: 300px; /* Adjust height as necessary */
-          background-image: url("/images/office_white.png");
+          background-image: url("/images/interior_bread.png");
           background-size: cover;
           background-position: center;
           display: flex; /* Flexbox for centering */
@@ -33,7 +33,7 @@ export default function LayoutInterior({ children, pageTitle }) {
           width: 100%;
         }
         .hero-image {
-          background-image: url("/images/office_white.png");
+          background-image: url("/images/interior_bread.png");
           background-size: cover;
           background-position: center;
           display: flex; /* Flexbox for centering */

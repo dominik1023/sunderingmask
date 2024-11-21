@@ -26,7 +26,6 @@ export default function Home() {
               Your Trusted Partner in Accessibility Compliance
             </h1>
             <div className="text-left">
-              {/* <h2>scan and remediate with us! Why trust us? Read below!</h2> */}
               <h2>You don&apos;t have to stress over ADA compliance</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
                 <InfoCard
