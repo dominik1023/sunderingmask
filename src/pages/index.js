@@ -56,7 +56,7 @@ export default function Home() {
                   cta={{ href: "/legal-compliance", text: "Ensure Compliance" }}
                 />
                 <InfoCard
-                  imgSrc="/images/edge.png"
+                  imgSrc="/images/water_card.png"
                   headline="Filtered Water"
                   paragraph="Purity in Every Drop - 
                   Water is the lifeblood of sourdough, and we use only the purest filtered water in our dough. Free from impurities and chemicals, our water ensures that the fermentation process is clean and natural, producing a better-tasting and healthier loaf."
