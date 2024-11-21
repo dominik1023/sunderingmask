@@ -22,6 +22,7 @@ export default function InfoCard({ imgSrc, headline, paragraph, cta }) {
             backgroundSize: "contain",
             backgroundColor: "rgba(255,255,255)",
             backgroundRepeat: "no-repeat",
+            height: "21rem"
           }}
         ></div>
 
