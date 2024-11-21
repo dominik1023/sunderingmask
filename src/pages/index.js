@@ -47,20 +47,20 @@ export default function Home() {
                   headline="Organic Flour"
                   paragraph="The Soul of Every Loaf - 
                   We source our organic flour from trusted farms that value sustainability and quality. By avoiding pesticides and chemical treatments, organic flour retains its natural nutrients and flavor, making it the perfect foundation for our sourdough. Each bite is a celebration of purity and care."
-                  cta={{ href: "/services", text: "Learn More" }}
+                  cta={{ href: "/ingredients-organic-flour", text: "Organic Flour" }}
                 />
                 <InfoCard
                   imgSrc="/images/salt.png"
                   headline="Celtic Salt"
                   paragraph="Where Flavor Meets Nutrition - Celtic salt is unrefined, mineral-rich, and sustainably harvested from pristine coastal waters. Unlike processed salts, it retains over 80 essential minerals that enhance the flavor and nutritional profile of our bread. Every sprinkle brings a natural complexity to the taste you won’t find in mass-produced bread."
-                  cta={{ href: "/legal-compliance", text: "Ensure Compliance" }}
+                  cta={{ href: "/ingredients-celtic-salt", text: "Celtic Salt" }}
                 />
                 <InfoCard
                   imgSrc="/images/water_card.png"
                   headline="Filtered Water"
                   paragraph="Purity in Every Drop - 
                   Water is the lifeblood of sourdough, and we use only the purest filtered water in our dough. Free from impurities and chemicals, our water ensures that the fermentation process is clean and natural, producing a better-tasting and healthier loaf."
-                  cta={{ href: "/contact-us", text: "Get Started" }}
+                  cta={{ href: "/ingredients-filtered-water", text: "Filtered Water" }}
                 />
               </div>
               <p>
