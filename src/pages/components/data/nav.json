@@ -12,6 +12,10 @@
       "name": "Organic Ingredients",
       "dropdown": [
         {
+          "name": "Sourdough Starter",
+          "path": "/ingredients-sourdough-starter"
+        },
+        {
           "name": "Celtic Salt",
           "path": "/ingredients-celtic-salt"
         },
