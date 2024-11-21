@@ -24,7 +24,7 @@ export default function LayoutHome({ children }) {
 
       <style jsx>{`
         .hero-container {
-          height: 400px; /* Adjust height as necessary */
+          height: 550px; /* Adjust height as necessary */
           background-image: url("/images/home_bread.png");
           background-size: cover;
           background-position: center;
