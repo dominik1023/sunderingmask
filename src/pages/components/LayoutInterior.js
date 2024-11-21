@@ -22,7 +22,7 @@ export default function LayoutInterior({ children, pageTitle }) {
 
       <style jsx>{`
         .hero-container {
-          height: 400px; /* Adjust height as necessary */
+          height: 480px; /* Adjust height as necessary */
           background-image: url("/images/interior_bread.png");
           background-size: cover;
           background-position: center;
