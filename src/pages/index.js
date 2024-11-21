@@ -43,7 +43,7 @@ export default function Home() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
                 <InfoCard
-                  imgSrc="/images/usability.png"
+                  imgSrc="/images/flour_card.png"
                   headline="Organic Flour"
                   paragraph="The Soul of Every Loaf - 
                   We source our organic flour from trusted farms that value sustainability and quality. By avoiding pesticides and chemical treatments, organic flour retains its natural nutrients and flavor, making it the perfect foundation for our sourdough. Each bite is a celebration of purity and care."
