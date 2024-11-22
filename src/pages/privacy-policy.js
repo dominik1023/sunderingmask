@@ -16,7 +16,7 @@ export default function PrivacyPolicy() {
         <main className="flex flex-col  row-start-2 items-center sm:items-start">
           <h2 className="text-3xl font-bold">How we use your data:</h2>
           <p>
-            At Accessibility Developers of Houston, LLC, we value your privacy
+            At The White White House Bakery of Baytown, LLC, we value your privacy
             and are committed to protecting your personal data. This policy
             outlines how we handle your information, ensuring transparency and
             security.

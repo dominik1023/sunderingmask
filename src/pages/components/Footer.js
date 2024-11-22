@@ -17,7 +17,7 @@ export default function Footer({ children }) {
           <Link href="/privacy-policy">Privacy Policy</Link> |{" "}
           <Link href="/accessibility-statement">Accessibility Statement</Link>{" "}
           &copy;
-          {currentYear} White House Bakery of Baytow, LLC. All Rights
+          {currentYear} White House Bakery of Baytown, LLC. All Rights
           Reserved.
         </p>
         <br />
