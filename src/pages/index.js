@@ -22,7 +22,7 @@ export default function Home() {
       <LayoutHome>
         <main className="flex flex-col items-center sm:items-start">
           <div className="container max-w-screen-xl mx-auto px-4 hero-content text-center">
-            <h1 className="text-4xl font-bold text-center text-gray-900 mt-8">Sourdough Baking - The True Taste of Tradition</h1>
+            <h1 className="text-4xl font-bold text-center text-gray-900 mt-8">The mask</h1>
             <p>Crafted with care, our organic sourdough bread brings together time-honored methods and the finest natural ingredients. Taste the difference that Celtic salt, filtered water, and organic flour make in every bite.
             </p>
             <div className="text-left">
